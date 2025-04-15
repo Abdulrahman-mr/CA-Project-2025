@@ -114,7 +114,7 @@ end type_architecture;&#13;
       <a name="facing" val="north"/>
       <a name="label" val="Reg_Write"/>
     </comp>
-    <comp lib="0" loc="(١٣٣٠,٢٧٧٠)" name="Pin">
+    <comp lib="0" loc="(١٣٣٠,٢٨٢٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_IN"/>
@@ -1072,7 +1072,7 @@ end type_architecture;&#13;
     <wire from="(١٣٣٠,٢٥٥٠)" to="(١٦٤٠,٢٥٥٠)"/>
     <wire from="(١٣٣٠,٢٦٦٠)" to="(١٣٣٠,٢٧٤٠)"/>
     <wire from="(١٣٣٠,٢٦٦٠)" to="(١٦٥٠,٢٦٦٠)"/>
-    <wire from="(١٣٣٠,٢٧٤٠)" to="(١٣٣٠,٢٧٧٠)"/>
+    <wire from="(١٣٣٠,٢٧٤٠)" to="(١٣٣٠,٢٨٢٠)"/>
     <wire from="(١٣٣٠,٢٧٤٠)" to="(١٨٣٠,٢٧٤٠)"/>
     <wire from="(١٣٣٠,٤١٠)" to="(١٣٣٠,٥٦٠)"/>
     <wire from="(١٣٣٠,٤١٠)" to="(١٦٣٠,٤١٠)"/>
