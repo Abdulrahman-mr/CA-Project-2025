@@ -7,6 +7,7 @@
       <a name="appearance" val="classic"/>
     </tool>
     <tool name="Probe">
+      <a name="appearance" val="classic"/>
       <a name="radix" val="16"/>
     </tool>
     <tool name="Tunnel">
@@ -121,42 +122,97 @@ end type_architecture;&#13;
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(١٥٩٠,٤٠)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(١٦٩٠,١٥٣٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧٠٠,١٣٤٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧٠٠,٢٠٢٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧٠٠,٢١٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧٠٠,٢١٦٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
     <comp lib="0" loc="(١٧٠٠,٢٨٠٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="clock"/>
     </comp>
-    <comp lib="0" loc="(١٧١٠,١١٠)" name="Probe">
+    <comp lib="0" loc="(١٧٠٠,٧١٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧٠٠,٩٣٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧١٠,١١٠)" name="Tunnel">
       <a name="label" val="R0"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧١٠,١٥٦٠)" name="Probe">
+    <comp lib="0" loc="(١٧١٠,١١٤٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
-    <comp lib="0" loc="(١٧١٠,٢٤٠)" name="Probe">
+    <comp lib="0" loc="(١٧١٠,١٧١٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧١٠,١٨٧٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧١٠,٢٣٤٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧١٠,٢٤٠)" name="Tunnel">
       <a name="label" val="R2"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧٢٠,١١٧٠)" name="Probe">
+    <comp lib="0" loc="(١٧١٠,٢٥٢٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧١٠,٥٣٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٧١٠,٨٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧٢٠,١١٧٠)" name="Tunnel">
       <a name="label" val="R12"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٧٢٠,١٣٧٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧٢٠,١٣٧٠)" name="Tunnel">
       <a name="label" val="R14"/>
@@ -166,145 +222,155 @@ end type_architecture;&#13;
       <a name="label" val="R16"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧٢٠,١٧٤٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٧٢٠,١٧٤٠)" name="Tunnel">
       <a name="label" val="R18"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٧٢٠,١٩٠٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧٢٠,١٩٠٠)" name="Tunnel">
       <a name="label" val="R20"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧٢٠,٢٥٥٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٧٢٠,٢٥٥٠)" name="Tunnel">
       <a name="label" val="R28"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧٢٠,٢٦٦٠)" name="Probe">
+    <comp lib="0" loc="(١٧٢٠,٢٦٣٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
-    <comp lib="0" loc="(١٧٢٠,٢٦٦٠)" name="Tunnel">
-      <a name="label" val="R30"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٧٢٠,٤١٠)" name="Probe">
+    <comp lib="0" loc="(١٧٢٠,٣٨٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧٢٠,٤١٠)" name="Tunnel">
       <a name="label" val="R4"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧٢٠,٥٦٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٧٢٠,٥٦٠)" name="Tunnel">
       <a name="label" val="R6"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٧٢٠,٧٤٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧٢٠,٧٤٠)" name="Tunnel">
       <a name="label" val="R8"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧٢٠,٩٦٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٧٢٠,٩٦٠)" name="Tunnel">
       <a name="label" val="R10"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٧٣٠,٢٠٥٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧٣٠,٢٠٥٠)" name="Tunnel">
       <a name="label" val="R22"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٧٣٠,٢١٩٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٧٣٠,٢١٩٠)" name="Tunnel">
       <a name="label" val="R24"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٧٣٠,٢٣٧٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٧٣٠,٢٣٧٠)" name="Tunnel">
       <a name="label" val="R26"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٦٠,٢٦٠)" name="Probe">
+    <comp lib="0" loc="(١٧٣٠,٢٦٦٠)" name="Tunnel">
+      <a name="label" val="R30"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(١٩٤٠,٢٣٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
-    <comp lib="0" loc="(١٩٧٠,١١٤٠)" name="Probe">
+    <comp lib="0" loc="(١٩٤٠,٣٨٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
-    <comp lib="0" loc="(١٩٧٠,١٢٠)" name="Probe">
+    <comp lib="0" loc="(١٩٤٠,٥١٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٤٠,٧٢٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٤٠,٩٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٥٠,٩٤٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٦٠,١١١٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٦٠,١٣٠٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٦٠,١٤٨٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٦٠,١٦٨٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٩٧٠,١٢٠)" name="Tunnel">
       <a name="label" val="R1"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٧٠,١٣٣٠)" name="Probe">
+    <comp lib="0" loc="(١٩٧٠,١٨٨٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
-    <comp lib="0" loc="(١٩٧٠,١٥١٠)" name="Probe">
+    <comp lib="0" loc="(١٩٧٠,٢٠٥٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٧٠,٢٢١٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٧٠,٢٣٧٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٧٠,٢٥١٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(١٩٧٠,٢٥١٠)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٩٧٠,٢٦٠)" name="Tunnel">
       <a name="label" val="R3"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٧٠,٤١٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٩٧٠,٤١٠)" name="Tunnel">
       <a name="label" val="R5"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٧٠,٥٤٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٩٧٠,٥٤٠)" name="Tunnel">
       <a name="label" val="R7"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٩٧٠,٧٥٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
-    <comp lib="0" loc="(١٩٧٠,٩٧٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٩٨٠,١١٤٠)" name="Tunnel">
       <a name="label" val="R13"/>
@@ -318,8 +384,9 @@ end type_architecture;&#13;
       <a name="label" val="R17"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٨٠,١٧١٠)" name="Probe">
+    <comp lib="0" loc="(١٩٨٠,٢٦٣٠)" name="Probe">
       <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
       <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٩٨٠,٧٥٠)" name="Tunnel">
@@ -334,49 +401,25 @@ end type_architecture;&#13;
       <a name="label" val="R19"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٩٠,١٩١٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٩٩٠,١٩١٠)" name="Tunnel">
       <a name="label" val="R21"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٩٩٠,٢٠٨٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٩٩٠,٢٠٨٠)" name="Tunnel">
       <a name="label" val="R23"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٩٠,٢٢٤٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٩٩٠,٢٢٤٠)" name="Tunnel">
       <a name="label" val="R25"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(١٩٩٠,٢٤٠٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(١٩٩٠,٢٤٠٠)" name="Tunnel">
       <a name="label" val="R27"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(١٩٩٠,٢٥٤٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
-    </comp>
     <comp lib="0" loc="(١٩٩٠,٢٥٤٠)" name="Tunnel">
       <a name="label" val="R29"/>
       <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(٢٠٠٠,٢٦٦٠)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(٢٠٠٠,٢٦٦٠)" name="Tunnel">
       <a name="label" val="R31"/>
@@ -768,10 +811,12 @@ end type_architecture;&#13;
     <comp lib="1" loc="(١٢٥٠,٩٨٠)" name="AND Gate"/>
     <comp lib="1" loc="(١٢٦٠,١٣٧٠)" name="AND Gate"/>
     <comp lib="2" loc="(٢٧١٠,١٨٤٠)" name="Multiplexer">
+      <a name="enable" val="true"/>
       <a name="select" val="5"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(٢٧٢٠,٨٨٠)" name="Multiplexer">
+      <a name="enable" val="true"/>
       <a name="select" val="5"/>
       <a name="width" val="32"/>
     </comp>
@@ -1115,34 +1160,69 @@ end type_architecture;&#13;
     <wire from="(١٥١٠,٦٠٠)" to="(١٦٤٠,٦٠٠)"/>
     <wire from="(١٥١٠,٧٨٠)" to="(١٥١٠,١٠٠٠)"/>
     <wire from="(١٥١٠,٧٨٠)" to="(١٦٣٠,٧٨٠)"/>
+    <wire from="(١٥٩٠,٤٠)" to="(١٦٨٠,٤٠)"/>
     <wire from="(١٦٣٠,٢٢١٠)" to="(١٦٤٠,٢٢١٠)"/>
     <wire from="(١٦٤٠,٢٤٢٠)" to="(١٦٤٠,٢٤٥٠)"/>
     <wire from="(١٦٤٠,٢٤٥٠)" to="(١٧٧٠,٢٤٥٠)"/>
-    <wire from="(١٦٨٠,١١٠)" to="(١٧١٠,١١٠)"/>
-    <wire from="(١٦٨٠,٢٤٠)" to="(١٧١٠,٢٤٠)"/>
+    <wire from="(١٦٨٠,١١٠)" to="(١٧٠٠,١١٠)"/>
+    <wire from="(١٦٨٠,٢٤٠)" to="(١٧٠٠,٢٤٠)"/>
     <wire from="(١٦٨٠,٢٦٦٠)" to="(١٧٠٠,٢٦٦٠)"/>
     <wire from="(١٦٨٠,٢٧٢٠)" to="(١٧٨٠,٢٧٢٠)"/>
-    <wire from="(١٦٩٠,٢٠٥٠)" to="(١٧٣٠,٢٠٥٠)"/>
-    <wire from="(١٦٩٠,٢١٩٠)" to="(١٧٣٠,٢١٩٠)"/>
+    <wire from="(١٦٨٠,٤٠)" to="(١٦٨٠,١١٠)"/>
+    <wire from="(١٦٩٠,١٥٣٠)" to="(١٧١٠,١٥٣٠)"/>
+    <wire from="(١٦٩٠,٢٠٥٠)" to="(١٧٠٠,٢٠٥٠)"/>
+    <wire from="(١٦٩٠,٢١٩٠)" to="(١٧٠٠,٢١٩٠)"/>
     <wire from="(١٦٩٠,٢٨٠)" to="(١٦٩٠,٣٤٠)"/>
     <wire from="(١٦٩٠,٢٨٠)" to="(١٨٦٠,٢٨٠)"/>
-    <wire from="(١٦٩٠,٤١٠)" to="(١٧٢٠,٤١٠)"/>
-    <wire from="(١٦٩٠,٧٤٠)" to="(١٧٢٠,٧٤٠)"/>
-    <wire from="(١٦٩٠,٩٦٠)" to="(١٧٢٠,٩٦٠)"/>
-    <wire from="(١٧٠٠,١١٧٠)" to="(١٧٢٠,١١٧٠)"/>
+    <wire from="(١٦٩٠,٤١٠)" to="(١٧١٠,٤١٠)"/>
+    <wire from="(١٦٩٠,٧٤٠)" to="(١٧٠٠,٧٤٠)"/>
+    <wire from="(١٦٩٠,٩٦٠)" to="(١٧٠٠,٩٦٠)"/>
+    <wire from="(١٧٠٠,١١٠)" to="(١٧١٠,١١٠)"/>
+    <wire from="(١٧٠٠,١١٧٠)" to="(١٧١٠,١١٧٠)"/>
+    <wire from="(١٧٠٠,١٣٤٠)" to="(١٧٠٠,١٣٧٠)"/>
     <wire from="(١٧٠٠,١٣٧٠)" to="(١٧٢٠,١٣٧٠)"/>
     <wire from="(١٧٠٠,١٤٠)" to="(١٧٠٠,٢٠٠)"/>
     <wire from="(١٧٠٠,١٤٠)" to="(١٨٧٠,١٤٠)"/>
     <wire from="(١٧٠٠,١٥٦٠)" to="(١٧١٠,١٥٦٠)"/>
-    <wire from="(١٧٠٠,١٧٤٠)" to="(١٧٢٠,١٧٤٠)"/>
-    <wire from="(١٧٠٠,١٩٠٠)" to="(١٧٢٠,١٩٠٠)"/>
-    <wire from="(١٧٠٠,٢٣٧٠)" to="(١٧٣٠,٢٣٧٠)"/>
-    <wire from="(١٧٠٠,٢٥٥٠)" to="(١٧٢٠,٢٥٥٠)"/>
+    <wire from="(١٧٠٠,١٧٤٠)" to="(١٧١٠,١٧٤٠)"/>
+    <wire from="(١٧٠٠,١٩٠٠)" to="(١٧١٠,١٩٠٠)"/>
+    <wire from="(١٧٠٠,٢٠٢٠)" to="(١٧٠٠,٢٠٥٠)"/>
+    <wire from="(١٧٠٠,٢٠٥٠)" to="(١٧٣٠,٢٠٥٠)"/>
+    <wire from="(١٧٠٠,٢١٠)" to="(١٧٠٠,٢٤٠)"/>
+    <wire from="(١٧٠٠,٢١٦٠)" to="(١٧٠٠,٢١٩٠)"/>
+    <wire from="(١٧٠٠,٢١٩٠)" to="(١٧٣٠,٢١٩٠)"/>
+    <wire from="(١٧٠٠,٢٣٧٠)" to="(١٧١٠,٢٣٧٠)"/>
+    <wire from="(١٧٠٠,٢٤٠)" to="(١٧١٠,٢٤٠)"/>
+    <wire from="(١٧٠٠,٢٥٥٠)" to="(١٧١٠,٢٥٥٠)"/>
     <wire from="(١٧٠٠,٢٧٦٠)" to="(١٧٠٠,٢٨٠٠)"/>
     <wire from="(١٧٠٠,٢٧٦٠)" to="(١٨٠٠,٢٧٦٠)"/>
-    <wire from="(١٧٠٠,٥٦٠)" to="(١٧٢٠,٥٦٠)"/>
+    <wire from="(١٧٠٠,٥٦٠)" to="(١٧١٠,٥٦٠)"/>
+    <wire from="(١٧٠٠,٧١٠)" to="(١٧٠٠,٧٤٠)"/>
+    <wire from="(١٧٠٠,٧٤٠)" to="(١٧٢٠,٧٤٠)"/>
+    <wire from="(١٧٠٠,٨٠)" to="(١٧٠٠,١١٠)"/>
+    <wire from="(١٧٠٠,٨٠)" to="(١٧١٠,٨٠)"/>
+    <wire from="(١٧٠٠,٩٣٠)" to="(١٧٠٠,٩٦٠)"/>
+    <wire from="(١٧٠٠,٩٦٠)" to="(١٧٢٠,٩٦٠)"/>
+    <wire from="(١٧١٠,١١٤٠)" to="(١٧١٠,١١٧٠)"/>
+    <wire from="(١٧١٠,١١٧٠)" to="(١٧٢٠,١١٧٠)"/>
+    <wire from="(١٧١٠,١٥٣٠)" to="(١٧١٠,١٥٦٠)"/>
     <wire from="(١٧١٠,١٥٦٠)" to="(١٧٢٠,١٥٦٠)"/>
+    <wire from="(١٧١٠,١٧١٠)" to="(١٧١٠,١٧٤٠)"/>
+    <wire from="(١٧١٠,١٧٤٠)" to="(١٧٢٠,١٧٤٠)"/>
+    <wire from="(١٧١٠,١٨٧٠)" to="(١٧١٠,١٩٠٠)"/>
+    <wire from="(١٧١٠,١٩٠٠)" to="(١٧٢٠,١٩٠٠)"/>
+    <wire from="(١٧١٠,٢٣٤٠)" to="(١٧١٠,٢٣٧٠)"/>
+    <wire from="(١٧١٠,٢٣٧٠)" to="(١٧٣٠,٢٣٧٠)"/>
+    <wire from="(١٧١٠,٢٥٢٠)" to="(١٧١٠,٢٥٥٠)"/>
+    <wire from="(١٧١٠,٢٥٥٠)" to="(١٧٢٠,٢٥٥٠)"/>
     <wire from="(١٧١٠,٢٦٦٠)" to="(١٧٢٠,٢٦٦٠)"/>
+    <wire from="(١٧١٠,٣٨٠)" to="(١٧١٠,٤١٠)"/>
+    <wire from="(١٧١٠,٣٨٠)" to="(١٧٢٠,٣٨٠)"/>
+    <wire from="(١٧١٠,٤١٠)" to="(١٧٢٠,٤١٠)"/>
+    <wire from="(١٧١٠,٥٣٠)" to="(١٧١٠,٥٦٠)"/>
+    <wire from="(١٧١٠,٥٦٠)" to="(١٧٢٠,٥٦٠)"/>
+    <wire from="(١٧٢٠,٢٦٣٠)" to="(١٧٢٠,٢٦٦٠)"/>
+    <wire from="(١٧٢٠,٢٦٦٠)" to="(١٧٣٠,٢٦٦٠)"/>
     <wire from="(١٧٦٠,١٩٣٠)" to="(١٧٦٠,١٩٩٠)"/>
     <wire from="(١٧٦٠,١٩٣٠)" to="(١٨٦٠,١٩٣٠)"/>
     <wire from="(١٧٦٠,٢١٠٠)" to="(١٧٦٠,٢١٢٠)"/>
@@ -1233,29 +1313,54 @@ end type_architecture;&#13;
     <wire from="(١٨٣٠,٧٥٠)" to="(١٨٧٠,٧٥٠)"/>
     <wire from="(١٨٣٠,٩٧٠)" to="(١٨٣٠,١١٤٠)"/>
     <wire from="(١٨٣٠,٩٧٠)" to="(١٨٧٠,٩٧٠)"/>
-    <wire from="(١٩٢٠,١١٤٠)" to="(١٩٧٠,١١٤٠)"/>
-    <wire from="(١٩٢٠,١٣٣٠)" to="(١٩٧٠,١٣٣٠)"/>
-    <wire from="(١٩٢٠,١٥١٠)" to="(١٩٧٠,١٥١٠)"/>
-    <wire from="(١٩٢٠,١٧١٠)" to="(١٩٨٠,١٧١٠)"/>
-    <wire from="(١٩٢٠,١٩١٠)" to="(١٩٩٠,١٩١٠)"/>
-    <wire from="(١٩٢٠,٢٦٠)" to="(١٩٦٠,٢٦٠)"/>
-    <wire from="(١٩٢٠,٥٤٠)" to="(١٩٧٠,٥٤٠)"/>
-    <wire from="(١٩٣٠,١٢٠)" to="(١٩٧٠,١٢٠)"/>
-    <wire from="(١٩٣٠,٢٠٨٠)" to="(١٩٩٠,٢٠٨٠)"/>
-    <wire from="(١٩٣٠,٤١٠)" to="(١٩٧٠,٤١٠)"/>
-    <wire from="(١٩٣٠,٧٥٠)" to="(١٩٧٠,٧٥٠)"/>
-    <wire from="(١٩٣٠,٩٧٠)" to="(١٩٧٠,٩٧٠)"/>
-    <wire from="(١٩٤٠,٢٢٤٠)" to="(١٩٩٠,٢٢٤٠)"/>
-    <wire from="(١٩٤٠,٢٤٠٠)" to="(١٩٩٠,٢٤٠٠)"/>
-    <wire from="(١٩٥٠,٢٥٤٠)" to="(١٩٩٠,٢٥٤٠)"/>
-    <wire from="(١٩٥٠,٢٦٦٠)" to="(٢٠٠٠,٢٦٦٠)"/>
-    <wire from="(١٩٦٠,٢٦٠)" to="(١٩٧٠,٢٦٠)"/>
-    <wire from="(١٩٧٠,١١٤٠)" to="(١٩٨٠,١١٤٠)"/>
-    <wire from="(١٩٧٠,١٣٣٠)" to="(١٩٨٠,١٣٣٠)"/>
-    <wire from="(١٩٧٠,١٥١٠)" to="(١٩٨٠,١٥١٠)"/>
-    <wire from="(١٩٧٠,٧٥٠)" to="(١٩٨٠,٧٥٠)"/>
-    <wire from="(١٩٧٠,٩٧٠)" to="(١٩٨٠,٩٧٠)"/>
-    <wire from="(١٩٨٠,١٧١٠)" to="(١٩٩٠,١٧١٠)"/>
+    <wire from="(١٩٢٠,١١٤٠)" to="(١٩٦٠,١١٤٠)"/>
+    <wire from="(١٩٢٠,١٣٣٠)" to="(١٩٦٠,١٣٣٠)"/>
+    <wire from="(١٩٢٠,١٥١٠)" to="(١٩٦٠,١٥١٠)"/>
+    <wire from="(١٩٢٠,١٧١٠)" to="(١٩٦٠,١٧١٠)"/>
+    <wire from="(١٩٢٠,١٩١٠)" to="(١٩٧٠,١٩١٠)"/>
+    <wire from="(١٩٢٠,٢٦٠)" to="(١٩٤٠,٢٦٠)"/>
+    <wire from="(١٩٢٠,٥٤٠)" to="(١٩٤٠,٥٤٠)"/>
+    <wire from="(١٩٣٠,١٢٠)" to="(١٩٤٠,١٢٠)"/>
+    <wire from="(١٩٣٠,٢٠٨٠)" to="(١٩٧٠,٢٠٨٠)"/>
+    <wire from="(١٩٣٠,٤١٠)" to="(١٩٤٠,٤١٠)"/>
+    <wire from="(١٩٣٠,٧٥٠)" to="(١٩٤٠,٧٥٠)"/>
+    <wire from="(١٩٣٠,٩٧٠)" to="(١٩٥٠,٩٧٠)"/>
+    <wire from="(١٩٤٠,١٢٠)" to="(١٩٧٠,١٢٠)"/>
+    <wire from="(١٩٤٠,٢٢٤٠)" to="(١٩٧٠,٢٢٤٠)"/>
+    <wire from="(١٩٤٠,٢٣٠)" to="(١٩٤٠,٢٦٠)"/>
+    <wire from="(١٩٤٠,٢٤٠٠)" to="(١٩٧٠,٢٤٠٠)"/>
+    <wire from="(١٩٤٠,٢٦٠)" to="(١٩٧٠,٢٦٠)"/>
+    <wire from="(١٩٤٠,٣٨٠)" to="(١٩٤٠,٤١٠)"/>
+    <wire from="(١٩٤٠,٤١٠)" to="(١٩٧٠,٤١٠)"/>
+    <wire from="(١٩٤٠,٥١٠)" to="(١٩٤٠,٥٤٠)"/>
+    <wire from="(١٩٤٠,٥٤٠)" to="(١٩٧٠,٥٤٠)"/>
+    <wire from="(١٩٤٠,٧٢٠)" to="(١٩٤٠,٧٥٠)"/>
+    <wire from="(١٩٤٠,٧٥٠)" to="(١٩٨٠,٧٥٠)"/>
+    <wire from="(١٩٤٠,٩٠)" to="(١٩٤٠,١٢٠)"/>
+    <wire from="(١٩٥٠,٢٥٤٠)" to="(١٩٧٠,٢٥٤٠)"/>
+    <wire from="(١٩٥٠,٢٦٦٠)" to="(١٩٨٠,٢٦٦٠)"/>
+    <wire from="(١٩٥٠,٩٤٠)" to="(١٩٥٠,٩٧٠)"/>
+    <wire from="(١٩٥٠,٩٧٠)" to="(١٩٨٠,٩٧٠)"/>
+    <wire from="(١٩٦٠,١١١٠)" to="(١٩٦٠,١١٤٠)"/>
+    <wire from="(١٩٦٠,١١٤٠)" to="(١٩٨٠,١١٤٠)"/>
+    <wire from="(١٩٦٠,١٣٠٠)" to="(١٩٦٠,١٣٣٠)"/>
+    <wire from="(١٩٦٠,١٣٣٠)" to="(١٩٨٠,١٣٣٠)"/>
+    <wire from="(١٩٦٠,١٤٨٠)" to="(١٩٦٠,١٥١٠)"/>
+    <wire from="(١٩٦٠,١٥١٠)" to="(١٩٨٠,١٥١٠)"/>
+    <wire from="(١٩٦٠,١٦٨٠)" to="(١٩٦٠,١٧١٠)"/>
+    <wire from="(١٩٦٠,١٧١٠)" to="(١٩٩٠,١٧١٠)"/>
+    <wire from="(١٩٧٠,١٨٨٠)" to="(١٩٧٠,١٩١٠)"/>
+    <wire from="(١٩٧٠,١٩١٠)" to="(١٩٩٠,١٩١٠)"/>
+    <wire from="(١٩٧٠,٢٠٥٠)" to="(١٩٧٠,٢٠٨٠)"/>
+    <wire from="(١٩٧٠,٢٠٨٠)" to="(١٩٩٠,٢٠٨٠)"/>
+    <wire from="(١٩٧٠,٢٢١٠)" to="(١٩٧٠,٢٢٤٠)"/>
+    <wire from="(١٩٧٠,٢٢٤٠)" to="(١٩٩٠,٢٢٤٠)"/>
+    <wire from="(١٩٧٠,٢٣٧٠)" to="(١٩٧٠,٢٤٠٠)"/>
+    <wire from="(١٩٧٠,٢٤٠٠)" to="(١٩٩٠,٢٤٠٠)"/>
+    <wire from="(١٩٧٠,٢٥١٠)" to="(١٩٧٠,٢٥٤٠)"/>
+    <wire from="(١٩٧٠,٢٥٤٠)" to="(١٩٩٠,٢٥٤٠)"/>
+    <wire from="(١٩٨٠,٢٦٣٠)" to="(١٩٨٠,٢٦٦٠)"/>
+    <wire from="(١٩٨٠,٢٦٦٠)" to="(٢٠٠٠,٢٦٦٠)"/>
     <wire from="(٢٤٠,١٣٣٠)" to="(٢٧٠,١٣٣٠)"/>
     <wire from="(٢٤٠٠,١٤٢٠)" to="(٢٦٦٠,١٤٢٠)"/>
     <wire from="(٢٤٠٠,١٤٤٠)" to="(٢٦٥٠,١٤٤٠)"/>
