@@ -365,6 +365,7 @@
     <comp lib="0" loc="(٢١٨٠,١١٨٠)" name="Bit Extender">
       <a name="in_width" val="1"/>
       <a name="out_width" val="32"/>
+      <a name="type" val="zero"/>
     </comp>
     <comp lib="0" loc="(٢١٩٠,١٦٠٠)" name="Splitter">
       <a name="bit1" val="0"/>
@@ -521,10 +522,12 @@
     <comp lib="0" loc="(٢٣٤٠,١٢٦٠)" name="Bit Extender">
       <a name="in_width" val="1"/>
       <a name="out_width" val="32"/>
+      <a name="type" val="zero"/>
     </comp>
     <comp lib="0" loc="(٢٣٤٠,١٣٤٠)" name="Bit Extender">
       <a name="in_width" val="1"/>
       <a name="out_width" val="32"/>
+      <a name="type" val="zero"/>
     </comp>
     <comp lib="0" loc="(٢٣٦٠,١٩٩٠)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -533,7 +536,7 @@
     <comp lib="0" loc="(٢٤٩٠,١١١٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
-      <a name="label" val="select_Alu"/>
+      <a name="label" val="Alu_op"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(٢٥٠٠,٢١٧٠)" name="Pin">
@@ -916,6 +919,56 @@
     <comp lib="3" loc="(٢٢٠٠,١٧٦٠)" name="Multiplier">
       <a name="width" val="64"/>
     </comp>
+    <comp lib="6" loc="(٢٠٨٥,١١٧٦)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="seq"/>
+    </comp>
+    <comp lib="6" loc="(٢١٣٥,١٤١٦)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="set"/>
+    </comp>
+    <comp lib="6" loc="(٢١٦١,٢١١٦)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="bgeu"/>
+    </comp>
+    <comp lib="6" loc="(٢١٧٠,٢٠٢٥)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="bge"/>
+    </comp>
+    <comp lib="6" loc="(٢٢٦٢,١٥٩٥)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="sset"/>
+    </comp>
+    <comp lib="6" loc="(٢٢٩٤,٢٠٤٨)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="blt"/>
+    </comp>
+    <comp lib="6" loc="(٢٣٠٢,٢١٣٦)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="bleu"/>
+    </comp>
+    <comp lib="6" loc="(٢٣١٥,١٧٣٥)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="mul"/>
+    </comp>
+    <comp lib="6" loc="(٢٤٣٠,١٩٨٣)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="beq"/>
+    </comp>
+    <comp lib="6" loc="(٢٤٦٤,٢٠١٨)" name="Text">
+      <a name="color" val="#49008b"/>
+      <a name="font" val="Segoe UI Black plain 15"/>
+      <a name="text" val="bne"/>
+    </comp>
     <wire from="(١٠٠٠,١٤٤٠)" to="(١٠٠٠,١٥٦٠)"/>
     <wire from="(١٠٠٠,١٤٤٠)" to="(١٠٣٠,١٤٤٠)"/>
     <wire from="(١٠٠٠,١٦٣٠)" to="(١٠٠٠,١٧٢٠)"/>
@@ -1023,6 +1076,7 @@
     <wire from="(١٩٢٠,١٤٣٠)" to="(١٩٧٠,١٤٣٠)"/>
     <wire from="(١٩٨٠,١٩٠)" to="(٢١٣٠,١٩٠)"/>
     <wire from="(١٩٨٠,٢٣٠)" to="(٢١٢٠,٢٣٠)"/>
+    <wire from="(١٩٨٠,٢٣١٠)" to="(٢٤٥٠,٢٣١٠)"/>
     <wire from="(١٩٨٠,٢٧٠)" to="(٢١١٠,٢٧٠)"/>
     <wire from="(١٩٨٠,٣١٠)" to="(٢١٠٠,٣١٠)"/>
     <wire from="(١٩٨٠,٣٥٠)" to="(٢٠٩٠,٣٥٠)"/>
@@ -1447,115 +1501,115 @@
     <a name="circuit" val="Alu_1_bit"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(١٠٥٠,١٣٦٠)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="north"/>
-      <a name="label" val="BInvert"/>
-    </comp>
-    <comp lib="0" loc="(١١٥٠,١٣٦٠)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="north"/>
-      <a name="label" val="AInvert"/>
-    </comp>
-    <comp lib="0" loc="(١٢٩٠,١٢٣٠)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="CarryIn"/>
-    </comp>
-    <comp lib="0" loc="(١٢٩٠,١٣٦٠)" name="Probe">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="north"/>
-      <a name="label" val="CarryOut"/>
-    </comp>
-    <comp lib="0" loc="(١٥٨٠,١٣٦٠)" name="Pin">
+    <comp lib="0" loc="(١٢٠٠,١٢٦٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="Operation"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(١٦٧٠,١١٠٠)" name="Pin">
+    <comp lib="0" loc="(١٢٩٠,١٠٠٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Result"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(٨١٠,٨٨٠)" name="Pin">
+    <comp lib="0" loc="(٤٣٠,٧٨٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="0" loc="(٨١٠,٩٦٠)" name="Pin">
+    <comp lib="0" loc="(٤٣٠,٨٦٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="B"/>
     </comp>
-    <comp lib="1" loc="(١٢٨٠,١٠٦٠)" name="OR Gate"/>
-    <comp lib="1" loc="(١٢٨٠,٩٤٠)" name="AND Gate"/>
-    <comp lib="1" loc="(١٢٩٠,١١٤٠)" name="XOR Gate"/>
-    <comp lib="1" loc="(٩٧٠,٩١٠)" name="NOT Gate"/>
-    <comp lib="1" loc="(٩٧٠,٩٩٠)" name="NOT Gate"/>
-    <comp lib="2" loc="(١٠٧٠,٨٩٠)" name="Multiplexer">
-      <a name="enable" val="true"/>
+    <comp lib="0" loc="(٦٧٠,١٢٦٠)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="BInvert"/>
     </comp>
-    <comp lib="2" loc="(١٠٧٠,٩٧٠)" name="Multiplexer">
-      <a name="enable" val="true"/>
+    <comp lib="0" loc="(٧٧٠,١٢٦٠)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="AInvert"/>
     </comp>
-    <comp lib="2" loc="(١٦٠٠,١١٠٠)" name="Multiplexer">
+    <comp lib="0" loc="(٩١٠,١١٣٠)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="CarryIn"/>
+    </comp>
+    <comp lib="0" loc="(٩١٠,١٢٦٠)" name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="CarryOut"/>
+    </comp>
+    <comp lib="1" loc="(٥٩٠,٨١٠)" name="NOT Gate"/>
+    <comp lib="1" loc="(٥٩٠,٨٩٠)" name="NOT Gate"/>
+    <comp lib="1" loc="(٩٠٠,٨٤٠)" name="AND Gate"/>
+    <comp lib="1" loc="(٩٠٠,٩٦٠)" name="OR Gate"/>
+    <comp lib="1" loc="(٩١٠,١٠٤٠)" name="XOR Gate"/>
+    <comp lib="2" loc="(١٢٢٠,١٠٠٠)" name="Multiplexer">
       <a name="enable" val="true"/>
       <a name="select" val="2"/>
     </comp>
-    <comp lib="3" loc="(١٣١٠,١٢٦٠)" name="Adder">
+    <comp lib="2" loc="(٦٩٠,٧٩٠)" name="Multiplexer">
+      <a name="enable" val="true"/>
+    </comp>
+    <comp lib="2" loc="(٦٩٠,٨٧٠)" name="Multiplexer">
+      <a name="enable" val="true"/>
+    </comp>
+    <comp lib="3" loc="(٩٣٠,١١٦٠)" name="Adder">
       <a name="width" val="1"/>
     </comp>
-    <wire from="(١٠٥٠,٩١٠)" to="(١٠٥٠,٩٣٠)"/>
-    <wire from="(١٠٥٠,٩٣٠)" to="(١١٥٠,٩٣٠)"/>
-    <wire from="(١٠٥٠,٩٩٠)" to="(١٠٥٠,١٣٦٠)"/>
-    <wire from="(١٠٧٠,٨٩٠)" to="(١١٩٠,٨٩٠)"/>
-    <wire from="(١٠٧٠,٩٧٠)" to="(١٢١٠,٩٧٠)"/>
-    <wire from="(١١٥٠,٩٣٠)" to="(١١٥٠,١٣٦٠)"/>
-    <wire from="(١١٩٠,١٠٤٠)" to="(١١٩٠,١١٢٠)"/>
-    <wire from="(١١٩٠,١٠٤٠)" to="(١٢٣٠,١٠٤٠)"/>
-    <wire from="(١١٩٠,١١٢٠)" to="(١١٩٠,١٢٥٠)"/>
-    <wire from="(١١٩٠,١١٢٠)" to="(١٢٣٠,١١٢٠)"/>
-    <wire from="(١١٩٠,١٢٥٠)" to="(١٢٧٠,١٢٥٠)"/>
-    <wire from="(١١٩٠,٨٩٠)" to="(١١٩٠,٩٢٠)"/>
-    <wire from="(١١٩٠,٩٢٠)" to="(١١٩٠,١٠٤٠)"/>
-    <wire from="(١١٩٠,٩٢٠)" to="(١٢٣٠,٩٢٠)"/>
-    <wire from="(١٢١٠,١٠٨٠)" to="(١٢١٠,١١٦٠)"/>
-    <wire from="(١٢١٠,١٠٨٠)" to="(١٢٣٠,١٠٨٠)"/>
-    <wire from="(١٢١٠,١١٦٠)" to="(١٢١٠,١٢٧٠)"/>
-    <wire from="(١٢١٠,١١٦٠)" to="(١٢٣٠,١١٦٠)"/>
-    <wire from="(١٢١٠,١٢٧٠)" to="(١٢٧٠,١٢٧٠)"/>
-    <wire from="(١٢١٠,٩٦٠)" to="(١٢١٠,٩٧٠)"/>
-    <wire from="(١٢١٠,٩٦٠)" to="(١٢٣٠,٩٦٠)"/>
-    <wire from="(١٢١٠,٩٧٠)" to="(١٢١٠,١٠٨٠)"/>
-    <wire from="(١٢٨٠,١٠٦٠)" to="(١٤٢٠,١٠٦٠)"/>
-    <wire from="(١٢٨٠,٩٤٠)" to="(١٤٣٠,٩٤٠)"/>
-    <wire from="(١٢٩٠,١١٤٠)" to="(١٤٢٠,١١٤٠)"/>
-    <wire from="(١٢٩٠,١٢٣٠)" to="(١٢٩٠,١٢٤٠)"/>
-    <wire from="(١٢٩٠,١٢٨٠)" to="(١٢٩٠,١٣٦٠)"/>
-    <wire from="(١٣١٠,١٢٦٠)" to="(١٤٣٠,١٢٦٠)"/>
-    <wire from="(١٤٢٠,١٠٦٠)" to="(١٤٢٠,١٠٩٠)"/>
-    <wire from="(١٤٢٠,١٠٩٠)" to="(١٥٦٠,١٠٩٠)"/>
-    <wire from="(١٤٢٠,١١٠٠)" to="(١٤٢٠,١١٤٠)"/>
-    <wire from="(١٤٢٠,١١٠٠)" to="(١٥٦٠,١١٠٠)"/>
-    <wire from="(١٤٣٠,١٠٨٠)" to="(١٥٦٠,١٠٨٠)"/>
-    <wire from="(١٤٣٠,١١١٠)" to="(١٤٣٠,١٢٦٠)"/>
-    <wire from="(١٤٣٠,١١١٠)" to="(١٥٦٠,١١١٠)"/>
-    <wire from="(١٤٣٠,٩٤٠)" to="(١٤٣٠,١٠٨٠)"/>
-    <wire from="(١٥٨٠,١١٢٠)" to="(١٥٨٠,١٣٦٠)"/>
-    <wire from="(١٦٠٠,١١٠٠)" to="(١٦٧٠,١١٠٠)"/>
-    <wire from="(٨١٠,٨٨٠)" to="(٩١٠,٨٨٠)"/>
-    <wire from="(٨١٠,٩٦٠)" to="(٩١٠,٩٦٠)"/>
-    <wire from="(٩١٠,٨٨٠)" to="(١٠٤٠,٨٨٠)"/>
-    <wire from="(٩١٠,٨٨٠)" to="(٩١٠,٩١٠)"/>
-    <wire from="(٩١٠,٩١٠)" to="(٩٤٠,٩١٠)"/>
-    <wire from="(٩١٠,٩٦٠)" to="(١٠٤٠,٩٦٠)"/>
-    <wire from="(٩١٠,٩٦٠)" to="(٩١٠,٩٩٠)"/>
-    <wire from="(٩١٠,٩٩٠)" to="(٩٤٠,٩٩٠)"/>
-    <wire from="(٩٧٠,٩١٠)" to="(٩٩٠,٩١٠)"/>
-    <wire from="(٩٧٠,٩٩٠)" to="(٩٩٠,٩٩٠)"/>
-    <wire from="(٩٩٠,٩٠٠)" to="(١٠٤٠,٩٠٠)"/>
-    <wire from="(٩٩٠,٩٠٠)" to="(٩٩٠,٩١٠)"/>
-    <wire from="(٩٩٠,٩٨٠)" to="(١٠٤٠,٩٨٠)"/>
-    <wire from="(٩٩٠,٩٨٠)" to="(٩٩٠,٩٩٠)"/>
+    <wire from="(١٠٤٠,١٠٠٠)" to="(١٠٤٠,١٠٤٠)"/>
+    <wire from="(١٠٤٠,١٠٠٠)" to="(١١٨٠,١٠٠٠)"/>
+    <wire from="(١٠٤٠,٩٦٠)" to="(١٠٤٠,٩٩٠)"/>
+    <wire from="(١٠٤٠,٩٩٠)" to="(١١٨٠,٩٩٠)"/>
+    <wire from="(١٠٥٠,١٠١٠)" to="(١٠٥٠,١١٦٠)"/>
+    <wire from="(١٠٥٠,١٠١٠)" to="(١١٨٠,١٠١٠)"/>
+    <wire from="(١٠٥٠,٨٤٠)" to="(١٠٥٠,٩٨٠)"/>
+    <wire from="(١٠٥٠,٩٨٠)" to="(١١٨٠,٩٨٠)"/>
+    <wire from="(١٢٠٠,١٠٢٠)" to="(١٢٠٠,١٢٦٠)"/>
+    <wire from="(١٢٢٠,١٠٠٠)" to="(١٢٩٠,١٠٠٠)"/>
+    <wire from="(٤٣٠,٧٨٠)" to="(٥٣٠,٧٨٠)"/>
+    <wire from="(٤٣٠,٨٦٠)" to="(٥٣٠,٨٦٠)"/>
+    <wire from="(٥٣٠,٧٨٠)" to="(٥٣٠,٨١٠)"/>
+    <wire from="(٥٣٠,٧٨٠)" to="(٦٦٠,٧٨٠)"/>
+    <wire from="(٥٣٠,٨١٠)" to="(٥٦٠,٨١٠)"/>
+    <wire from="(٥٣٠,٨٦٠)" to="(٥٣٠,٨٩٠)"/>
+    <wire from="(٥٣٠,٨٦٠)" to="(٦٦٠,٨٦٠)"/>
+    <wire from="(٥٣٠,٨٩٠)" to="(٥٦٠,٨٩٠)"/>
+    <wire from="(٥٩٠,٨١٠)" to="(٦١٠,٨١٠)"/>
+    <wire from="(٥٩٠,٨٩٠)" to="(٦١٠,٨٩٠)"/>
+    <wire from="(٦١٠,٨٠٠)" to="(٦١٠,٨١٠)"/>
+    <wire from="(٦١٠,٨٠٠)" to="(٦٦٠,٨٠٠)"/>
+    <wire from="(٦١٠,٨٨٠)" to="(٦١٠,٨٩٠)"/>
+    <wire from="(٦١٠,٨٨٠)" to="(٦٦٠,٨٨٠)"/>
+    <wire from="(٦٧٠,٨١٠)" to="(٦٧٠,٨٣٠)"/>
+    <wire from="(٦٧٠,٨٣٠)" to="(٧٧٠,٨٣٠)"/>
+    <wire from="(٦٧٠,٨٩٠)" to="(٦٧٠,١٢٦٠)"/>
+    <wire from="(٦٩٠,٧٩٠)" to="(٨١٠,٧٩٠)"/>
+    <wire from="(٦٩٠,٨٧٠)" to="(٨٣٠,٨٧٠)"/>
+    <wire from="(٧٧٠,٨٣٠)" to="(٧٧٠,١٢٦٠)"/>
+    <wire from="(٨١٠,١٠٢٠)" to="(٨١٠,١١٥٠)"/>
+    <wire from="(٨١٠,١٠٢٠)" to="(٨٥٠,١٠٢٠)"/>
+    <wire from="(٨١٠,١١٥٠)" to="(٨٩٠,١١٥٠)"/>
+    <wire from="(٨١٠,٧٩٠)" to="(٨١٠,٨٢٠)"/>
+    <wire from="(٨١٠,٨٢٠)" to="(٨١٠,٩٤٠)"/>
+    <wire from="(٨١٠,٨٢٠)" to="(٨٥٠,٨٢٠)"/>
+    <wire from="(٨١٠,٩٤٠)" to="(٨١٠,١٠٢٠)"/>
+    <wire from="(٨١٠,٩٤٠)" to="(٨٥٠,٩٤٠)"/>
+    <wire from="(٨٣٠,١٠٦٠)" to="(٨٣٠,١١٧٠)"/>
+    <wire from="(٨٣٠,١٠٦٠)" to="(٨٥٠,١٠٦٠)"/>
+    <wire from="(٨٣٠,١١٧٠)" to="(٨٩٠,١١٧٠)"/>
+    <wire from="(٨٣٠,٨٦٠)" to="(٨٣٠,٨٧٠)"/>
+    <wire from="(٨٣٠,٨٦٠)" to="(٨٥٠,٨٦٠)"/>
+    <wire from="(٨٣٠,٨٧٠)" to="(٨٣٠,٩٨٠)"/>
+    <wire from="(٨٣٠,٩٨٠)" to="(٨٣٠,١٠٦٠)"/>
+    <wire from="(٨٣٠,٩٨٠)" to="(٨٥٠,٩٨٠)"/>
+    <wire from="(٩٠٠,٨٤٠)" to="(١٠٥٠,٨٤٠)"/>
+    <wire from="(٩٠٠,٩٦٠)" to="(١٠٤٠,٩٦٠)"/>
+    <wire from="(٩١٠,١٠٤٠)" to="(١٠٤٠,١٠٤٠)"/>
+    <wire from="(٩١٠,١١٣٠)" to="(٩١٠,١١٤٠)"/>
+    <wire from="(٩١٠,١١٨٠)" to="(٩١٠,١٢٦٠)"/>
+    <wire from="(٩٣٠,١١٦٠)" to="(١٠٥٠,١١٦٠)"/>
   </circuit>
 </project>
