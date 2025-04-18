@@ -519,6 +519,9 @@
     <comp lib="0" loc="(٢٢٤٠,٨٢٠)" name="Tunnel">
       <a name="label" val="Rs16"/>
     </comp>
+    <comp lib="0" loc="(٢٢٧٠,١٩٣٠)" name="Tunnel">
+      <a name="label" val="Sign_Flag"/>
+    </comp>
     <comp lib="0" loc="(٢٣٤٠,١٢٦٠)" name="Bit Extender">
       <a name="in_width" val="1"/>
       <a name="out_width" val="32"/>
@@ -919,17 +922,17 @@
     <comp lib="3" loc="(٢٢٠٠,١٧٦٠)" name="Multiplier">
       <a name="width" val="64"/>
     </comp>
-    <comp lib="6" loc="(٢٠٨٥,١١٧٦)" name="Text">
+    <comp lib="6" loc="(٢٠٨٥,١١٧٥)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="seq"/>
     </comp>
-    <comp lib="6" loc="(٢١٣٥,١٤١٦)" name="Text">
+    <comp lib="6" loc="(٢١٣٥,١٤١٥)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="set"/>
     </comp>
-    <comp lib="6" loc="(٢١٦١,٢١١٦)" name="Text">
+    <comp lib="6" loc="(٢١٦٠,٢١١٥)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="bgeu"/>
@@ -939,17 +942,17 @@
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="bge"/>
     </comp>
-    <comp lib="6" loc="(٢٢٦٢,١٥٩٥)" name="Text">
+    <comp lib="6" loc="(٢٢٦٠,١٥٩٥)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="sset"/>
     </comp>
-    <comp lib="6" loc="(٢٢٩٤,٢٠٤٨)" name="Text">
+    <comp lib="6" loc="(٢٢٩٠,٢٠٤٥)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="blt"/>
     </comp>
-    <comp lib="6" loc="(٢٣٠٢,٢١٣٦)" name="Text">
+    <comp lib="6" loc="(٢٣٠٠,٢١٣٥)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="bleu"/>
@@ -959,12 +962,12 @@
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="mul"/>
     </comp>
-    <comp lib="6" loc="(٢٤٣٠,١٩٨٣)" name="Text">
+    <comp lib="6" loc="(٢٤٣٠,١٩٨٠)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="beq"/>
     </comp>
-    <comp lib="6" loc="(٢٤٦٤,٢٠١٨)" name="Text">
+    <comp lib="6" loc="(٢٤٦٠,٢٠١٥)" name="Text">
       <a name="color" val="#49008b"/>
       <a name="font" val="Segoe UI Black plain 15"/>
       <a name="text" val="bne"/>
@@ -1107,7 +1110,7 @@
     <wire from="(٢٠١٠,١٧٢٠)" to="(٢١٢٠,١٧٢٠)"/>
     <wire from="(٢٠١٠,١٨٠٠)" to="(٢١٢٠,١٨٠٠)"/>
     <wire from="(٢٠١٠,٢٠٣٠)" to="(٢٤٨٠,٢٠٣٠)"/>
-    <wire from="(٢٠١٠,٢٠٥٠)" to="(٢٤٦٠,٢٠٥٠)"/>
+    <wire from="(٢٠١٠,٢٠٥٠)" to="(٢١١٠,٢٠٥٠)"/>
     <wire from="(٢٠١٠,٢١٢٠)" to="(٢٤٧٠,٢١٢٠)"/>
     <wire from="(٢٠١٠,٢١٤٠)" to="(٢٤٨٠,٢١٤٠)"/>
     <wire from="(٢٠١٠,٦٧٠)" to="(٢٠١٠,٧٤٠)"/>
@@ -1152,6 +1155,9 @@
     <wire from="(٢١٠٠,٦٥٠)" to="(٢١٦٠,٦٥٠)"/>
     <wire from="(٢١٠٠,٩٩٠)" to="(٢١٠٠,١٠٧٠)"/>
     <wire from="(٢١٠٠,٩٩٠)" to="(٢٤٧٠,٩٩٠)"/>
+    <wire from="(٢١١٠,١٩٣٠)" to="(٢١١٠,٢٠٥٠)"/>
+    <wire from="(٢١١٠,١٩٣٠)" to="(٢٢٧٠,١٩٣٠)"/>
+    <wire from="(٢١١٠,٢٠٥٠)" to="(٢٤٦٠,٢٠٥٠)"/>
     <wire from="(٢١١٠,٢٧٠)" to="(٢١١٠,٦٤٠)"/>
     <wire from="(٢١١٠,٦٤٠)" to="(٢١٦٠,٦٤٠)"/>
     <wire from="(٢١٢٠,١٧٢٠)" to="(٢١٢٠,١٧٥٠)"/>
