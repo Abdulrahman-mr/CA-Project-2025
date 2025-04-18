@@ -543,7 +543,7 @@
     <comp lib="0" loc="(٢٤٩٠,١١١٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
-      <a name="label" val="Alu_op"/>
+      <a name="label" val="Alu_select"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(٢٥٠٠,٢١٧٠)" name="Pin">
@@ -1516,7 +1516,7 @@
     <comp lib="0" loc="(١٢٠٠,١٢٦٠)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
-      <a name="label" val="Operation"/>
+      <a name="label" val="logic_Operation"/>
       <a name="width" val="2"/>
     </comp>
     <comp lib="0" loc="(١٢٩٠,١٠٠٠)" name="Pin">
