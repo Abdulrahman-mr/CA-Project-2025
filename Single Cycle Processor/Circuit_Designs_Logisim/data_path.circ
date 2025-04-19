@@ -4,7 +4,7 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
+      <a name="fanout" val="16"/>
     </tool>
     <tool name="Pin">
       <a name="width" val="16"/>
@@ -12,9 +12,6 @@
     <tool name="Probe">
       <a name="facing" val="west"/>
       <a name="radix" val="16"/>
-    </tool>
-    <tool name="Tunnel">
-      <a name="facing" val="south"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -115,6 +112,7 @@ end TCL_Generic;&#13;
       <a name="valign" val="base"/>
     </tool>
   </lib>
+  <lib desc="file#C:\Users\El-Wattaneya\Documents\GitHub\CA-Project-2025\Single Cycle Processor\Circuit_Designs_Logisim\pc_circut.circ" name="9"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -154,40 +152,52 @@ end TCL_Generic;&#13;
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="circuitvhdl" val="false"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(520,200)" to="(670,200)"/>
-    <wire from="(910,140)" to="(960,140)"/>
-    <wire from="(490,150)" to="(520,150)"/>
-    <wire from="(520,150)" to="(520,200)"/>
-    <wire from="(960,210)" to="(1000,210)"/>
-    <wire from="(960,140)" to="(1000,140)"/>
-    <wire from="(670,200)" to="(670,250)"/>
-    <wire from="(960,140)" to="(960,210)"/>
-    <wire from="(420,200)" to="(520,200)"/>
-    <wire from="(910,140)" to="(910,300)"/>
-    <comp lib="0" loc="(420,200)" name="Tunnel">
+    <wire from="(1000,410)" to="(1060,410)"/>
+    <wire from="(1000,500)" to="(1070,500)"/>
+    <wire from="(750,530)" to="(860,530)"/>
+    <wire from="(890,580)" to="(890,600)"/>
+    <wire from="(930,580)" to="(930,600)"/>
+    <wire from="(960,580)" to="(960,600)"/>
+    <wire from="(780,410)" to="(860,410)"/>
+    <wire from="(780,450)" to="(860,450)"/>
+    <wire from="(780,480)" to="(860,480)"/>
+    <comp lib="0" loc="(780,410)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="width" val="16"/>
+      <a name="label" val="imm_16bit"/>
+    </comp>
+    <comp lib="0" loc="(960,600)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="jalr"/>
+    </comp>
+    <comp lib="9" loc="(1000,410)" name="main"/>
+    <comp lib="0" loc="(1070,500)" name="Tunnel">
       <a name="width" val="20"/>
-      <a name="label" val="pc"/>
+      <a name="label" val="pc_inc"/>
     </comp>
-    <comp lib="0" loc="(490,150)" name="Pin">
+    <comp lib="0" loc="(1060,410)" name="Tunnel">
       <a name="width" val="20"/>
+      <a name="label" val="pc_next"/>
     </comp>
-    <comp lib="0" loc="(1000,210)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(780,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="11"/>
+      <a name="label" val="bit_upper"/>
+    </comp>
+    <comp lib="0" loc="(890,600)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="pc_src"/>
+    </comp>
+    <comp lib="0" loc="(780,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="bit_lower"/>
+    </comp>
+    <comp lib="0" loc="(750,530)" name="Clock"/>
+    <comp lib="0" loc="(930,600)" name="Tunnel">
+      <a name="facing" val="north"/>
       <a name="width" val="32"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1000,140)" name="Tunnel">
-      <a name="width" val="32"/>
-      <a name="label" val="instruction"/>
-    </comp>
-    <comp lib="4" loc="(670,240)" name="ROM">
-      <a name="addrWidth" val="20"/>
-      <a name="dataWidth" val="32"/>
-      <a name="contents">addr/data: 20 32
-221acd2 122ca 123459 155cab 12bcd 222cd
-</a>
+      <a name="label" val="RA"/>
     </comp>
   </circuit>
 </project>
