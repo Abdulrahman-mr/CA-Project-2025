@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project source="2.13.8" version="1.0">
-  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
-
-  <lib desc="#Wiring" name="0">
+This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+<lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="fanout" val="16"/>
     </tool>
@@ -155,7 +154,7 @@ end TCL_Generic;&#13;
     <a name="circuitvhdl" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <appear>
-      <path d="M278,120 Q282,130 286,120" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M276,119 Q280,129 284,119" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="278" stroke="#000000" stroke-width="2" width="279" x="142" y="118"/>
       <text font-family="SansSerif" font-size="18" font-weight="bold" text-anchor="middle" x="387" y="294">jalr</text>
       <text font-family="SansSerif" font-size="18" font-weight="bold" text-anchor="middle" x="373" y="237">Pc_src</text>
@@ -165,13 +164,13 @@ end TCL_Generic;&#13;
       <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="207" y="334">less_flag_unsigned</text>
       <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="163" y="223">BLT</text>
       <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="162" y="196">BNE</text>
-      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="164" y="143">BEQ</text>
-      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="178" y="166">Zero_flag</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="160" y="153">BEQ</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="175" y="174">Zero_flag</text>
       <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="163" y="275">BGE</text>
       <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="201" y="245">less_flag_signed</text>
-      <text font-family="SansSerif" font-size="28" font-weight="bold" text-anchor="middle" x="292" y="145">pc_control_unit</text>
-      <circ-port height="8" pin="350,100" width="8" x="136" y="136"/>
-      <circ-port height="8" pin="350,140" width="8" x="136" y="156"/>
+      <text font-family="SansSerif" font-size="28" font-weight="bold" text-anchor="middle" x="283" y="146">PC Control Unit</text>
+      <circ-port height="8" pin="350,100" width="8" x="136" y="146"/>
+      <circ-port height="8" pin="350,140" width="8" x="136" y="166"/>
       <circ-port height="8" pin="350,220" width="8" x="136" y="186"/>
       <circ-port height="8" pin="350,260" width="8" x="136" y="216"/>
       <circ-port height="8" pin="350,300" width="8" x="136" y="236"/>
@@ -221,88 +220,88 @@ end TCL_Generic;&#13;
     <wire from="(450,430)" to="(780,430)"/>
     <wire from="(350,140)" to="(360,140)"/>
     <wire from="(790,340)" to="(800,340)"/>
+    <comp lib="1" loc="(450,200)" name="AND Gate">
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="0" loc="(350,410)" name="Pin"/>
+    <comp lib="8" loc="(245,308)" name="Text">
+      <a name="text" val="less_flag__signed"/>
+      <a name="font" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="8" loc="(298,226)" name="Text">
+      <a name="text" val="BNE"/>
+      <a name="font" val="SansSerif bold 18"/>
+    </comp>
     <comp lib="8" loc="(296,107)" name="Text">
       <a name="text" val="BEQ"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="1" loc="(450,200)" name="AND Gate">
-      <a name="negate0" val="true"/>
-    </comp>
+    <comp lib="0" loc="(350,140)" name="Pin"/>
     <comp lib="0" loc="(890,310)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="8" loc="(245,308)" name="Text">
-      <a name="text" val="less_flag__signed"/>
-      <a name="font" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="8" loc="(277,147)" name="Text">
-      <a name="text" val="zero_flag"/>
-      <a name="font" val="SansSerif bold 18"/>
-    </comp>
+    <comp lib="1" loc="(450,280)" name="AND Gate"/>
+    <comp lib="0" loc="(350,260)" name="Pin"/>
+    <comp lib="0" loc="(350,300)" name="Pin"/>
+    <comp lib="0" loc="(350,380)" name="Pin"/>
+    <comp lib="0" loc="(710,660)" name="Pin"/>
     <comp lib="8" loc="(289,415)" name="Text">
       <a name="text" val="BLTU"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(710,660)" name="Pin"/>
-    <comp lib="8" loc="(940,666)" name="Text">
-      <a name="text" val="jalr"/>
-      <a name="font" val="SansSerif bolditalic 18"/>
-    </comp>
-    <comp lib="0" loc="(350,380)" name="Pin"/>
     <comp lib="1" loc="(450,360)" name="AND Gate">
-      <a name="negate0" val="true"/>
-    </comp>
-    <comp lib="0" loc="(350,100)" name="Pin"/>
-    <comp lib="0" loc="(350,410)" name="Pin"/>
-    <comp lib="1" loc="(450,510)" name="AND Gate">
       <a name="negate0" val="true"/>
     </comp>
     <comp lib="8" loc="(287,390)" name="Text">
       <a name="text" val="BGE"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="1" loc="(450,280)" name="AND Gate"/>
-    <comp lib="8" loc="(647,668)" name="Text">
-      <a name="text" val="JALR"/>
-      <a name="font" val="SansSerif bolditalic 18"/>
+    <comp lib="8" loc="(231,457)" name="Text">
+      <a name="text" val="less_flag_unsigned"/>
+      <a name="font" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="1" loc="(450,430)" name="AND Gate"/>
+    <comp lib="8" loc="(903,280)" name="Text">
+      <a name="text" val="Pc_src"/>
+      <a name="font" val="SansSerif bold 20"/>
     </comp>
     <comp lib="0" loc="(890,660)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(350,220)" name="Pin"/>
+    <comp lib="1" loc="(450,120)" name="AND Gate"/>
+    <comp lib="8" loc="(647,668)" name="Text">
+      <a name="text" val="JALR"/>
+      <a name="font" val="SansSerif bolditalic 18"/>
+    </comp>
     <comp lib="8" loc="(296,267)" name="Text">
       <a name="text" val="BLT"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(350,450)" name="Pin"/>
-    <comp lib="0" loc="(350,300)" name="Pin"/>
-    <comp lib="8" loc="(298,226)" name="Text">
-      <a name="text" val="BNE"/>
+    <comp lib="8" loc="(940,666)" name="Text">
+      <a name="text" val="jalr"/>
+      <a name="font" val="SansSerif bolditalic 18"/>
+    </comp>
+    <comp lib="0" loc="(350,530)" name="Pin"/>
+    <comp lib="0" loc="(350,100)" name="Pin"/>
+    <comp lib="1" loc="(450,510)" name="AND Gate">
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="8" loc="(277,147)" name="Text">
+      <a name="text" val="zero_flag"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(350,260)" name="Pin"/>
     <comp lib="8" loc="(298,541)" name="Text">
       <a name="text" val="BGEU"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(350,220)" name="Pin"/>
-    <comp lib="1" loc="(450,430)" name="AND Gate"/>
+    <comp lib="0" loc="(350,450)" name="Pin"/>
     <comp lib="1" loc="(850,310)" name="OR Gate">
       <a name="inputs" val="6"/>
     </comp>
-    <comp lib="8" loc="(231,457)" name="Text">
-      <a name="text" val="less_flag_unsigned"/>
-      <a name="font" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="1" loc="(450,120)" name="AND Gate"/>
-    <comp lib="0" loc="(350,140)" name="Pin"/>
-    <comp lib="8" loc="(903,280)" name="Text">
-      <a name="text" val="Pc_src"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="0" loc="(350,530)" name="Pin"/>
   </circuit>
 </project>
