@@ -162,57 +162,46 @@ end TCL_Generic;&#13;
       <text font-family="SansSerif" font-size="9" text-anchor="middle" x="368" y="293">Output_Enable</text>
       <text font-family="SansSerif" font-size="9" text-anchor="middle" x="304" y="285">clk</text>
       <text font-family="SansSerif" font-size="9" text-anchor="middle" x="481" y="203">Memory_Output</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="275" y="254"> Bus B</text>
       <circ-port height="8" pin="140,250" width="8" x="286" y="206"/>
       <circ-port height="8" pin="190,300" width="8" x="416" y="276"/>
       <circ-port height="8" pin="200,340" width="8" x="366" y="276"/>
       <circ-port height="8" pin="240,350" width="8" x="316" y="276"/>
       <circ-port height="10" pin="650,280" width="10" x="445" y="205"/>
+      <circ-port height="8" pin="330,450" width="8" x="286" y="236"/>
       <circ-anchor facing="east" height="6" width="6" x="447" y="207"/>
     </appear>
     <wire from="(190,300)" to="(380,300)"/>
-    <wire from="(340,340)" to="(340,410)"/>
+    <wire from="(340,380)" to="(340,450)"/>
     <wire from="(260,230)" to="(310,230)"/>
-    <wire from="(200,310)" to="(380,310)"/>
-    <wire from="(310,210)" to="(310,230)"/>
-    <wire from="(260,200)" to="(260,230)"/>
-    <wire from="(380,180)" to="(380,210)"/>
-    <wire from="(220,220)" to="(220,250)"/>
-    <wire from="(200,310)" to="(200,340)"/>
-    <wire from="(250,320)" to="(250,350)"/>
-    <wire from="(340,340)" to="(380,340)"/>
     <wire from="(620,280)" to="(650,280)"/>
+    <wire from="(340,340)" to="(340,380)"/>
+    <wire from="(200,310)" to="(380,310)"/>
     <wire from="(240,200)" to="(260,200)"/>
+    <wire from="(310,210)" to="(310,230)"/>
     <wire from="(140,250)" to="(220,250)"/>
+    <wire from="(330,450)" to="(340,450)"/>
     <wire from="(230,350)" to="(240,350)"/>
     <wire from="(620,280)" to="(620,340)"/>
     <wire from="(190,340)" to="(200,340)"/>
     <wire from="(240,350)" to="(250,350)"/>
     <wire from="(380,210)" to="(380,260)"/>
+    <wire from="(260,200)" to="(260,230)"/>
     <wire from="(250,320)" to="(380,320)"/>
+    <wire from="(380,180)" to="(380,210)"/>
+    <wire from="(300,380)" to="(340,380)"/>
+    <wire from="(220,220)" to="(220,250)"/>
+    <wire from="(200,310)" to="(200,340)"/>
+    <wire from="(250,320)" to="(250,350)"/>
+    <wire from="(340,340)" to="(380,340)"/>
     <wire from="(310,210)" to="(380,210)"/>
-    <comp lib="0" loc="(340,410)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="width" val="32"/>
-      <a name="label" val="BusB"/>
+    <comp lib="8" loc="(80,196)" name="Text">
+      <a name="text" val="Alu_Result"/>
     </comp>
-    <comp lib="0" loc="(380,180)" name="Probe">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(300,380)" name="Probe">
       <a name="radix" val="16"/>
-      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(190,300)" name="Pin"/>
-    <comp lib="0" loc="(140,250)" name="Pin">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="8" loc="(678,249)" name="Text">
-      <a name="text" val="memory_output"/>
-    </comp>
-    <comp lib="4" loc="(380,250)" name="RAM">
-      <a name="addrWidth" val="20"/>
-      <a name="dataWidth" val="32"/>
-      <a name="databus" val="bibus"/>
-    </comp>
-    <comp lib="0" loc="(240,350)" name="Pin"/>
     <comp lib="0" loc="(220,220)" name="Splitter">
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -247,8 +236,17 @@ end TCL_Generic;&#13;
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="8" loc="(80,196)" name="Text">
-      <a name="text" val="Alu_Result"/>
+    <comp lib="8" loc="(678,249)" name="Text">
+      <a name="text" val="memory_output"/>
+    </comp>
+    <comp lib="0" loc="(240,350)" name="Pin"/>
+    <comp lib="0" loc="(380,180)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(330,450)" name="Pin">
+      <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(200,340)" name="Pin"/>
     <comp lib="0" loc="(650,280)" name="Pin">
@@ -257,6 +255,14 @@ end TCL_Generic;&#13;
       <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
       <a name="radix" val="16"/>
+    </comp>
+    <comp lib="4" loc="(380,250)" name="RAM">
+      <a name="addrWidth" val="20"/>
+      <a name="dataWidth" val="32"/>
+      <a name="databus" val="bibus"/>
+    </comp>
+    <comp lib="0" loc="(140,250)" name="Pin">
+      <a name="width" val="32"/>
     </comp>
   </circuit>
 </project>
