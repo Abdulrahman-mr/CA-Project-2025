@@ -155,13 +155,14 @@ end TCL_Generic;&#13;
     <a name="circuitvhdl" val="false"/>
     <a name="circuitvhdlpath" val=""/>
     <appear>
-      <path d="M425,175 Q429,185 433,175" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="125" stroke="#000000" stroke-width="2" width="158" x="352" y="174"/>
-      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="534" y="222">Instruction</text>
-      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="341" y="223">Pc</text>
-      <circ-port height="8" pin="490,150" width="8" x="346" y="226"/>
-      <circ-port height="10" pin="1000,210" width="10" x="505" y="225"/>
-      <circ-anchor facing="east" height="6" width="6" x="507" y="227"/>
+      <path d="M323,228 Q315,240 329,231" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="#da94ff" height="135" rx="10" ry="10" stroke="#000000" width="165" x="165" y="218"/>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="174" y="291">Pc</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="298" y="293">Instruction</text>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="246" y="248">Instruction_Memory</text>
+      <circ-port height="8" pin="490,150" width="8" x="156" y="286"/>
+      <circ-port height="10" pin="1000,210" width="10" x="325" y="285"/>
+      <circ-anchor facing="east" height="6" width="6" x="327" y="287"/>
     </appear>
     <wire from="(520,200)" to="(670,200)"/>
     <wire from="(910,140)" to="(960,140)"/>
@@ -174,12 +175,8 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(490,150)" name="Pin">
       <a name="width" val="20"/>
     </comp>
-    <comp lib="4" loc="(670,240)" name="ROM">
-      <a name="addrWidth" val="20"/>
-      <a name="dataWidth" val="32"/>
-      <a name="contents">addr/data: 20 32
-221acd2 122ca 123459 155cab 12bcd 222cd
-</a>
+    <comp lib="8" loc="(445,103)" name="Text">
+      <a name="text" val="pc"/>
     </comp>
     <comp lib="0" loc="(1000,210)" name="Pin">
       <a name="facing" val="west"/>
@@ -187,11 +184,15 @@ end TCL_Generic;&#13;
       <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="8" loc="(445,103)" name="Text">
-      <a name="text" val="pc"/>
-    </comp>
     <comp lib="8" loc="(1028,140)" name="Text">
       <a name="text" val="instruction"/>
+    </comp>
+    <comp lib="4" loc="(670,240)" name="ROM">
+      <a name="addrWidth" val="20"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 20 32
+221acd2 122ca 123459 155cab 12bcd 222cd
+</a>
     </comp>
   </circuit>
 </project>
