@@ -156,27 +156,27 @@ end TCL_Generic;&#13;
     <a name="circuitvhdlpath" val=""/>
     <appear>
       <path d="M143,37 Q147,47 151,37" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="488" stroke="#000000" stroke-width="2" width="109" x="91" y="30"/>
+      <rect fill="none" height="489" stroke="#000000" stroke-width="2" width="69" x="91" y="30"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="108" y="430">stall</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="107" y="377">clk</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="126" y="184">instruction</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="117" y="235">pc_IF</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="122" y="272">pc_inc</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="178" y="226">pc_ID</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="168" y="156">instruction</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="172" y="281">pc_inc</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="186" y="219">pc_ID</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="193" y="153">instruction</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="188" y="272">pc_inc</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="115" y="136">kill</text>
       <circ-port height="8" pin="240,260" width="8" x="86" y="176"/>
       <circ-port height="8" pin="260,390" width="8" x="86" y="226"/>
       <circ-port height="8" pin="260,540" width="8" x="86" y="266"/>
       <circ-port height="8" pin="130,630" width="8" x="86" y="376"/>
       <circ-port height="8" pin="110,680" width="8" x="86" y="426"/>
-      <circ-port height="10" pin="540,260" width="10" x="195" y="155"/>
-      <circ-port height="10" pin="530,390" width="10" x="195" y="225"/>
-      <circ-port height="10" pin="530,540" width="10" x="195" y="275"/>
+      <circ-port height="10" pin="540,260" width="10" x="155" y="155"/>
+      <circ-port height="10" pin="530,390" width="10" x="155" y="225"/>
+      <circ-port height="10" pin="530,540" width="10" x="155" y="275"/>
       <circ-port height="8" pin="230,130" width="8" x="86" y="126"/>
-      <circ-port height="10" pin="530,130" width="10" x="195" y="125"/>
-      <circ-anchor facing="east" height="6" width="6" x="197" y="157"/>
+      <circ-port height="10" pin="530,130" width="10" x="155" y="125"/>
+      <circ-anchor facing="east" height="6" width="6" x="157" y="157"/>
     </appear>
     <wire from="(360,280)" to="(360,410)"/>
     <wire from="(340,300)" to="(340,430)"/>
@@ -206,52 +206,13 @@ end TCL_Generic;&#13;
     <wire from="(240,260)" to="(370,260)"/>
     <wire from="(360,560)" to="(360,680)"/>
     <wire from="(290,680)" to="(360,680)"/>
-    <comp lib="0" loc="(260,390)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="label" val="PC_IF"/>
-    </comp>
-    <comp lib="4" loc="(380,510)" name="Register">
-      <a name="width" val="20"/>
-    </comp>
     <comp lib="8" loc="(89,637)" name="Text">
       <a name="text" val="clk"/>
     </comp>
-    <comp lib="4" loc="(370,230)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
     <comp lib="1" loc="(170,680)" name="NOT Gate"/>
-    <comp lib="0" loc="(260,540)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="label" val="pc_inc"/>
-    </comp>
-    <comp lib="8" loc="(78,686)" name="Text">
-      <a name="text" val="stall"/>
-    </comp>
     <comp lib="0" loc="(240,260)" name="Pin">
       <a name="width" val="32"/>
       <a name="label" val="instruction"/>
-    </comp>
-    <comp lib="0" loc="(130,630)" name="Pin"/>
-    <comp lib="4" loc="(370,100)" name="Register">
-      <a name="width" val="1"/>
-    </comp>
-    <comp lib="0" loc="(530,130)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="kill_ID"/>
-    </comp>
-    <comp lib="4" loc="(380,360)" name="Register">
-      <a name="width" val="20"/>
-    </comp>
-    <comp lib="0" loc="(230,130)" name="Pin">
-      <a name="label" val="kill"/>
-    </comp>
-    <comp lib="0" loc="(110,680)" name="Pin"/>
-    <comp lib="0" loc="(530,390)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="PC_ID"/>
     </comp>
     <comp lib="0" loc="(530,540)" name="Pin">
       <a name="facing" val="west"/>
@@ -259,11 +220,50 @@ end TCL_Generic;&#13;
       <a name="width" val="20"/>
       <a name="label" val="pc_inc"/>
     </comp>
+    <comp lib="4" loc="(370,100)" name="Register">
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="4" loc="(380,360)" name="Register">
+      <a name="width" val="20"/>
+    </comp>
+    <comp lib="0" loc="(230,130)" name="Pin">
+      <a name="label" val="kill"/>
+    </comp>
+    <comp lib="0" loc="(260,540)" name="Pin">
+      <a name="width" val="20"/>
+      <a name="label" val="pc_inc"/>
+    </comp>
+    <comp lib="0" loc="(110,680)" name="Pin"/>
     <comp lib="0" loc="(540,260)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="label" val="instruction"/>
+    </comp>
+    <comp lib="8" loc="(78,686)" name="Text">
+      <a name="text" val="stall"/>
+    </comp>
+    <comp lib="4" loc="(370,230)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(260,390)" name="Pin">
+      <a name="width" val="20"/>
+      <a name="label" val="PC_IF"/>
+    </comp>
+    <comp lib="4" loc="(380,510)" name="Register">
+      <a name="width" val="20"/>
+    </comp>
+    <comp lib="0" loc="(530,390)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="20"/>
+      <a name="label" val="PC_ID"/>
+    </comp>
+    <comp lib="0" loc="(130,630)" name="Pin"/>
+    <comp lib="0" loc="(530,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="kill_ID"/>
     </comp>
   </circuit>
 </project>
