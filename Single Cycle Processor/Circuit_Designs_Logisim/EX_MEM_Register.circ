@@ -158,37 +158,37 @@ end TCL_Generic;&#13;
     <a name="circuitvhdl" val="false"/>
     <a name="circuitvhdlpath" val=""/>
     <appear>
-      <path d="M118,56 Q122,66 102,55" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="508" stroke="#000000" stroke-width="2" width="71" x="50" y="54"/>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="83" y="113">ALU_result</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="70" y="153">BusB</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="80" y="214">MemRead</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="80" y="272">MemWrite</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="79" y="342">MemtoReg</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="76" y="483">RegWrite</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="83" y="417">Reg_Des</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="100" y="551">Clock</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="83" y="526">pc_inc</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="67" y="553">jalr</text>
-      <circ-port height="8" pin="1100,270" width="8" x="46" y="146"/>
-      <circ-port height="8" pin="640,420" width="8" x="46" y="206"/>
-      <circ-port height="8" pin="1120,490" width="8" x="46" y="266"/>
-      <circ-port height="8" pin="640,580" width="8" x="46" y="336"/>
-      <circ-port height="8" pin="1120,710" width="8" x="46" y="476"/>
-      <circ-port height="10" pin="1210,310" width="10" x="115" y="145"/>
-      <circ-port height="10" pin="720,450" width="10" x="115" y="205"/>
-      <circ-port height="10" pin="1200,510" width="10" x="115" y="265"/>
-      <circ-port height="10" pin="720,590" width="10" x="115" y="335"/>
-      <circ-port height="10" pin="1200,730" width="10" x="115" y="475"/>
-      <circ-port height="10" pin="730,290" width="10" x="115" y="105"/>
-      <circ-port height="8" pin="640,740" width="8" x="46" y="406"/>
-      <circ-port height="10" pin="730,760" width="10" x="115" y="405"/>
-      <circ-port height="8" pin="860,100" width="8" x="96" y="556"/>
-      <circ-port height="8" pin="640,260" width="8" x="46" y="106"/>
-      <circ-port height="8" pin="640,860" width="8" x="46" y="516"/>
-      <circ-port height="10" pin="730,890" width="10" x="115" y="515"/>
-      <circ-port height="8" pin="1130,890" width="8" x="46" y="546"/>
-      <circ-port height="10" pin="1210,900" width="10" x="115" y="545"/>
+      <path d="M190,65 Q194,75 174,64" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="#90f081" height="511" rx="10" ry="10" stroke="#000000" width="63" x="155" y="56"/>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="183" y="114">ALU_result</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="169" y="153">BusB</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="181" y="214">MemRead</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="180" y="274">MemWrite</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="183" y="343">MemtoReg</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="178" y="414">Reg_Des</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="178" y="483">RegWrite</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="173" y="521">pc_inc</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="167" y="553">jalr</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="191" y="561">Clock</text>
+      <circ-port height="8" pin="1100,270" width="8" x="146" y="146"/>
+      <circ-port height="8" pin="640,420" width="8" x="146" y="206"/>
+      <circ-port height="8" pin="1120,490" width="8" x="146" y="266"/>
+      <circ-port height="8" pin="640,580" width="8" x="146" y="336"/>
+      <circ-port height="8" pin="1120,710" width="8" x="146" y="476"/>
+      <circ-port height="10" pin="1210,310" width="10" x="215" y="145"/>
+      <circ-port height="10" pin="720,450" width="10" x="215" y="205"/>
+      <circ-port height="10" pin="1200,510" width="10" x="215" y="265"/>
+      <circ-port height="10" pin="720,590" width="10" x="215" y="335"/>
+      <circ-port height="10" pin="1200,730" width="10" x="215" y="475"/>
+      <circ-port height="10" pin="730,290" width="10" x="215" y="105"/>
+      <circ-port height="8" pin="640,740" width="8" x="146" y="406"/>
+      <circ-port height="10" pin="730,760" width="10" x="215" y="405"/>
+      <circ-port height="8" pin="860,100" width="8" x="186" y="566"/>
+      <circ-port height="8" pin="640,260" width="8" x="146" y="106"/>
+      <circ-port height="8" pin="640,860" width="8" x="146" y="516"/>
+      <circ-port height="10" pin="730,890" width="10" x="215" y="515"/>
+      <circ-port height="8" pin="1130,890" width="8" x="146" y="546"/>
+      <circ-port height="10" pin="1210,900" width="10" x="215" y="545"/>
       <circ-anchor facing="east" height="6" width="6" x="-83" y="217"/>
     </appear>
     <wire from="(820,140)" to="(870,140)"/>
@@ -252,87 +252,63 @@ end TCL_Generic;&#13;
     <wire from="(650,760)" to="(660,760)"/>
     <wire from="(720,290)" to="(730,290)"/>
     <wire from="(720,890)" to="(730,890)"/>
-    <comp lib="0" loc="(1130,950)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(640,940)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1210,900)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="jalr_MEM"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(890,100)" name="Tunnel">
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1120,490)" name="Pin">
-      <a name="label" val="MemWrite_EX"/>
-    </comp>
-    <comp lib="4" loc="(660,560)" name="Register">
-      <a name="width" val="1"/>
-    </comp>
-    <comp lib="0" loc="(720,590)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="MemtoReg_MEM"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1130,890)" name="Pin">
-      <a name="label" val="jalr_EX"/>
-    </comp>
-    <comp lib="0" loc="(630,810)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1200,510)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="MemWrite_MEM"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(640,310)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="EX_MEM_Enable"/>
-    </comp>
-    <comp lib="4" loc="(660,730)" name="Register">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="0" loc="(640,500)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
-    </comp>
     <comp lib="4" loc="(1140,480)" name="Register">
       <a name="width" val="1"/>
     </comp>
-    <comp lib="0" loc="(640,780)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="EX_MEM_Enable"/>
+    <comp lib="4" loc="(1140,280)" name="Register">
+      <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(640,340)" name="Tunnel">
+    <comp lib="0" loc="(1120,560)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(860,100)" name="Pin"/>
-    <comp lib="0" loc="(820,140)" name="Constant">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(640,260)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="ALU_result_EX"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(640,910)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="EX_MEM_Enable"/>
     </comp>
+    <comp lib="0" loc="(640,420)" name="Pin">
+      <a name="label" val="MemRead_EX"/>
+    </comp>
+    <comp lib="0" loc="(650,470)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EX_MEM_Enable"/>
+    </comp>
+    <comp lib="4" loc="(660,260)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(660,560)" name="Register">
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1110,530)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EX_MEM_Enable"/>
+    </comp>
+    <comp lib="0" loc="(640,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EX_MEM_Enable"/>
+    </comp>
+    <comp lib="0" loc="(1210,310)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="BusB_MEM"/>
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(640,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EX_MEM_Enable"/>
+    </comp>
+    <comp lib="4" loc="(660,860)" name="Register">
+      <a name="width" val="20"/>
+    </comp>
     <comp lib="4" loc="(1140,700)" name="Register">
       <a name="width" val="1"/>
     </comp>
-    <comp lib="4" loc="(660,420)" name="Register">
+    <comp lib="0" loc="(890,100)" name="Tunnel">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="4" loc="(1150,870)" name="Register">
       <a name="width" val="1"/>
     </comp>
     <comp lib="0" loc="(640,860)" name="Pin">
@@ -340,11 +316,76 @@ end TCL_Generic;&#13;
       <a name="label" val="pc_inc_EX"/>
       <a name="radix" val="16"/>
     </comp>
+    <comp lib="0" loc="(1120,780)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(640,610)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EX_MEM_Enable"/>
+    </comp>
+    <comp lib="0" loc="(640,260)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="label" val="ALU_result_EX"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="4" loc="(660,730)" name="Register">
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(1120,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EX_MEM_Enable"/>
+    </comp>
+    <comp lib="0" loc="(1130,890)" name="Pin">
+      <a name="label" val="jalr_EX"/>
+    </comp>
+    <comp lib="0" loc="(640,500)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(720,590)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="MemtoReg_MEM"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(640,340)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="4" loc="(660,420)" name="Register">
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(640,580)" name="Pin">
+      <a name="label" val="MemtoReg_EX"/>
+    </comp>
+    <comp lib="0" loc="(640,940)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(1110,750)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EX_MEM_Enable"/>
+    </comp>
+    <comp lib="0" loc="(860,100)" name="Pin"/>
+    <comp lib="0" loc="(1120,490)" name="Pin">
+      <a name="label" val="MemWrite_EX"/>
+    </comp>
+    <comp lib="0" loc="(1120,710)" name="Pin">
+      <a name="label" val="RegWrite_EX"/>
+    </comp>
+    <comp lib="0" loc="(1120,360)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
     <comp lib="0" loc="(720,450)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="MemRead_MEM"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(870,140)" name="Tunnel">
+      <a name="label" val="EX_MEM_Enable"/>
     </comp>
     <comp lib="0" loc="(730,760)" name="Pin">
       <a name="facing" val="west"/>
@@ -353,19 +394,45 @@ end TCL_Generic;&#13;
       <a name="label" val="Reg_Des_MEM"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1120,560)" name="Tunnel">
+    <comp lib="0" loc="(1200,510)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="MemWrite_MEM"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(630,810)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(640,420)" name="Pin">
-      <a name="label" val="MemRead_EX"/>
+    <comp lib="0" loc="(730,890)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="20"/>
+      <a name="label" val="pc_inc_MEM"/>
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="16"/>
     </comp>
-    <comp lib="0" loc="(640,610)" name="Tunnel">
+    <comp lib="0" loc="(1210,900)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="jalr_MEM"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(1100,270)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="label" val="BusB_EX"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(1130,950)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(1130,920)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="EX_MEM_Enable"/>
     </comp>
-    <comp lib="4" loc="(660,260)" name="Register">
-      <a name="width" val="32"/>
+    <comp lib="0" loc="(820,140)" name="Constant">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(730,290)" name="Pin">
       <a name="facing" val="west"/>
@@ -381,80 +448,13 @@ end TCL_Generic;&#13;
       <a name="label" val="RegWrite_MEM"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(650,470)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="EX_MEM_Enable"/>
-    </comp>
-    <comp lib="0" loc="(730,890)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="pc_inc_MEM"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="16"/>
-    </comp>
-    <comp lib="4" loc="(1150,870)" name="Register">
-      <a name="width" val="1"/>
-    </comp>
     <comp lib="0" loc="(640,740)" name="Pin">
       <a name="width" val="5"/>
       <a name="label" val="Reg_Des_EX"/>
     </comp>
-    <comp lib="0" loc="(870,140)" name="Tunnel">
-      <a name="label" val="EX_MEM_Enable"/>
-    </comp>
-    <comp lib="0" loc="(1110,750)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="EX_MEM_Enable"/>
-    </comp>
-    <comp lib="0" loc="(1120,780)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1110,530)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="EX_MEM_Enable"/>
-    </comp>
-    <comp lib="0" loc="(1130,920)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="EX_MEM_Enable"/>
-    </comp>
-    <comp lib="0" loc="(1120,330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="EX_MEM_Enable"/>
-    </comp>
-    <comp lib="0" loc="(1120,360)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1210,310)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="BusB_MEM"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="16"/>
-    </comp>
-    <comp lib="4" loc="(660,860)" name="Register">
-      <a name="width" val="20"/>
-    </comp>
-    <comp lib="0" loc="(1120,710)" name="Pin">
-      <a name="label" val="RegWrite_EX"/>
-    </comp>
-    <comp lib="0" loc="(640,580)" name="Pin">
-      <a name="label" val="MemtoReg_EX"/>
-    </comp>
-    <comp lib="4" loc="(1140,280)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
     <comp lib="0" loc="(640,640)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1100,270)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="BusB_EX"/>
-      <a name="radix" val="16"/>
     </comp>
   </circuit>
 </project>

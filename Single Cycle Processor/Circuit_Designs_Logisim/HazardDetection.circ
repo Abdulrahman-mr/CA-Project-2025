@@ -155,30 +155,30 @@ end TCL_Generic;&#13;
     <a name="circuitvhdl" val="false"/>
     <a name="circuitvhdlpath" val=""/>
     <appear>
-      <path d="M906,227 Q901,239 898,227" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="426" stroke="#000000" stroke-width="2" width="420" x="690" y="225"/>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="767" y="388">MemRead_EX</text>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="731" y="576">Branch </text>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="726" y="600">JALR </text>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="1078" y="416">Stall</text>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="1083" y="464">Kill</text>
-      <text font-family="SansSerif" font-size="48" font-weight="bold" text-anchor="middle" x="904" y="310">Hazard Detection</text>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="730" y="448">RS1_ID</text>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="732" y="486">RS2_ID</text>
-      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="729" y="525">RD_EX</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="726" y="543">RD_WB</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="736" y="554">reg_Write_WB</text>
-      <circ-port height="8" pin="430,380" width="8" x="686" y="376"/>
-      <circ-port height="8" pin="350,780" width="8" x="686" y="566"/>
-      <circ-port height="8" pin="350,820" width="8" x="686" y="586"/>
-      <circ-port height="10" pin="970,800" width="10" x="1105" y="455"/>
-      <circ-port height="10" pin="1020,470" width="10" x="1105" y="405"/>
-      <circ-port height="8" pin="200,420" width="8" x="686" y="436"/>
-      <circ-port height="8" pin="200,440" width="8" x="686" y="516"/>
-      <circ-port height="8" pin="190,490" width="8" x="686" y="476"/>
-      <circ-port height="8" pin="190,580" width="8" x="686" y="536"/>
-      <circ-port height="8" pin="590,510" width="8" x="686" y="546"/>
-      <circ-anchor facing="east" height="6" width="6" x="1107" y="407"/>
+      <path d="M562,242 Q551,259 546,238" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="#ffb5fe" height="422" rx="10" ry="10" stroke="#000000" width="444" x="226" y="230"/>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="259" y="283">MemRead_EX</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="244" y="334">RS1_ID</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="246" y="386">RS2_ID</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="245" y="421">RD_EX</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="243" y="464">RD_WB</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="260" y="513">reg_Write_WB</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="247" y="562">Branch</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="240" y="616">JALR</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="652" y="415">Stall</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="649" y="585">Kill</text>
+      <text font-family="SansSerif" font-size="40" font-weight="bold" text-anchor="middle" x="452" y="410">Hazard Detection</text>
+      <circ-port height="8" pin="430,380" width="8" x="216" y="276"/>
+      <circ-port height="8" pin="350,780" width="8" x="216" y="556"/>
+      <circ-port height="8" pin="350,820" width="8" x="216" y="606"/>
+      <circ-port height="10" pin="970,800" width="10" x="665" y="575"/>
+      <circ-port height="10" pin="1020,470" width="10" x="665" y="405"/>
+      <circ-port height="8" pin="200,420" width="8" x="216" y="326"/>
+      <circ-port height="8" pin="200,440" width="8" x="216" y="416"/>
+      <circ-port height="8" pin="190,490" width="8" x="216" y="376"/>
+      <circ-port height="8" pin="190,580" width="8" x="216" y="456"/>
+      <circ-port height="8" pin="590,510" width="8" x="216" y="506"/>
+      <circ-anchor facing="east" height="6" width="6" x="667" y="407"/>
     </appear>
     <wire from="(660,340)" to="(660,350)"/>
     <wire from="(430,380)" to="(680,380)"/>
@@ -246,84 +246,84 @@ end TCL_Generic;&#13;
     <wire from="(550,590)" to="(620,590)"/>
     <wire from="(380,430)" to="(510,430)"/>
     <wire from="(270,350)" to="(530,350)"/>
-    <comp lib="3" loc="(370,640)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="0" loc="(1020,470)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Stall"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="3" loc="(380,430)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="0" loc="(190,490)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="RS2_ID"/>
-    </comp>
-    <comp lib="0" loc="(490,260)" name="Constant">
-      <a name="width" val="5"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="1" loc="(900,470)" name="OR Gate"/>
-    <comp lib="0" loc="(350,780)" name="Pin">
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="1" loc="(550,590)" name="OR Gate"/>
-    <comp lib="1" loc="(990,470)" name="AND Gate"/>
-    <comp lib="0" loc="(350,820)" name="Pin">
-      <a name="label" val="jalr"/>
-    </comp>
-    <comp lib="3" loc="(570,270)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="0" loc="(200,420)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="RS1_ID"/>
-    </comp>
-    <comp lib="0" loc="(480,320)" name="Constant">
-      <a name="width" val="5"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="3" loc="(380,500)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="8" loc="(668,482)" name="Text">
-      <a name="text" val="READ IN 1 CYCLE AND WRITE IN ANOTHER"/>
-    </comp>
-    <comp lib="1" loc="(620,340)" name="NOT Gate"/>
     <comp lib="3" loc="(370,570)" name="Comparator">
       <a name="width" val="5"/>
     </comp>
-    <comp lib="1" loc="(740,330)" name="AND Gate"/>
-    <comp lib="1" loc="(560,450)" name="OR Gate"/>
+    <comp lib="0" loc="(590,510)" name="Pin">
+      <a name="label" val="reg_Write_WB"/>
+    </comp>
+    <comp lib="1" loc="(760,550)" name="AND Gate"/>
     <comp lib="0" loc="(970,800)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Kill"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(190,580)" name="Pin">
+    <comp lib="3" loc="(570,270)" name="Comparator">
       <a name="width" val="5"/>
-      <a name="label" val="RD_WB"/>
     </comp>
-    <comp lib="1" loc="(760,550)" name="AND Gate"/>
-    <comp lib="0" loc="(200,440)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="RD_EX"/>
-    </comp>
-    <comp lib="1" loc="(730,400)" name="AND Gate"/>
     <comp lib="3" loc="(570,340)" name="Comparator">
       <a name="width" val="5"/>
     </comp>
-    <comp lib="1" loc="(610,800)" name="OR Gate"/>
-    <comp lib="1" loc="(650,270)" name="NOT Gate"/>
-    <comp lib="0" loc="(590,510)" name="Pin">
-      <a name="label" val="reg_Write_WB"/>
+    <comp lib="1" loc="(730,400)" name="AND Gate"/>
+    <comp lib="3" loc="(380,430)" name="Comparator">
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="1" loc="(990,470)" name="AND Gate"/>
+    <comp lib="3" loc="(380,500)" name="Comparator">
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(190,490)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="RS2_ID"/>
     </comp>
     <comp lib="0" loc="(430,380)" name="Pin">
       <a name="label" val="MemRead_EX"/>
     </comp>
+    <comp lib="1" loc="(610,800)" name="OR Gate"/>
+    <comp lib="0" loc="(350,780)" name="Pin">
+      <a name="label" val="Branch"/>
+    </comp>
+    <comp lib="1" loc="(900,470)" name="OR Gate"/>
+    <comp lib="8" loc="(668,482)" name="Text">
+      <a name="text" val="READ IN 1 CYCLE AND WRITE IN ANOTHER"/>
+    </comp>
+    <comp lib="0" loc="(490,260)" name="Constant">
+      <a name="width" val="5"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="1" loc="(550,590)" name="OR Gate"/>
+    <comp lib="0" loc="(200,420)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="RS1_ID"/>
+    </comp>
+    <comp lib="1" loc="(620,340)" name="NOT Gate"/>
+    <comp lib="0" loc="(1020,470)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Stall"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(350,820)" name="Pin">
+      <a name="label" val="jalr"/>
+    </comp>
+    <comp lib="0" loc="(190,580)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="RD_WB"/>
+    </comp>
+    <comp lib="3" loc="(370,640)" name="Comparator">
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(480,320)" name="Constant">
+      <a name="width" val="5"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(200,440)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="RD_EX"/>
+    </comp>
+    <comp lib="1" loc="(740,330)" name="AND Gate"/>
+    <comp lib="1" loc="(560,450)" name="OR Gate"/>
+    <comp lib="1" loc="(650,270)" name="NOT Gate"/>
   </circuit>
 </project>
