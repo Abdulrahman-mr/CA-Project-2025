@@ -4,7 +4,8 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="fanout" val="16"/>
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
     </tool>
     <tool name="Pin">
       <a name="width" val="16"/>
@@ -15,6 +16,7 @@
     </tool>
     <tool name="Tunnel">
       <a name="facing" val="south"/>
+      <a name="width" val="7"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -23,8 +25,9 @@
       <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
-      <a name="width" val="16"/>
-      <a name="value" val="0xffff"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="7"/>
+      <a name="value" val="0x7f"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -163,7 +166,7 @@ end TCL_Generic;&#13;
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="921" y="354">Reg_Des_MEM</text>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="916" y="413">Reg_Des_EX</text>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="947" y="432">RegWrite_MEM</text>
-      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="1036" y="430">RegWrite_MEM</text>
+      <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="1039" y="431">MEMRead_Mem</text>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="1126" y="428">RegWrite_Ex</text>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="1145" y="214">Forward_C</text>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="1147" y="364">Forward_D</text>
@@ -324,230 +327,61 @@ end TCL_Generic;&#13;
     <wire from="(620,490)" to="(630,490)"/>
     <wire from="(630,420)" to="(640,420)"/>
     <wire from="(630,380)" to="(640,380)"/>
-    <comp lib="0" loc="(1030,970)" name="Tunnel">
+    <comp lib="0" loc="(150,680)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
       <a name="label" val="Reg_Des_MEM"/>
     </comp>
-    <comp lib="0" loc="(550,410)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Rs1_not_Zero"/>
-    </comp>
-    <comp lib="0" loc="(440,720)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="3" loc="(330,510)" name="Comparator">
-      <a name="width" val="5"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(850,80)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="RegWrite_MEM"/>
-    </comp>
-    <comp lib="0" loc="(1410,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RegWrite_EX"/>
-    </comp>
-    <comp lib="0" loc="(730,80)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="RegWrite_EX"/>
-    </comp>
-    <comp lib="0" loc="(560,530)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Rs1_not_Zero"/>
-    </comp>
-    <comp lib="1" loc="(690,510)" name="AND Gate">
-      <a name="inputs" val="5"/>
-      <a name="negate0" val="true"/>
-    </comp>
-    <comp lib="0" loc="(780,160)" name="Pin">
+    <comp lib="0" loc="(2020,980)" name="Splitter">
       <a name="facing" val="west"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Reg_Des_MEM"/>
-    </comp>
-    <comp lib="0" loc="(470,90)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="0" loc="(1420,940)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RegWrite_MEM"/>
-    </comp>
-    <comp lib="3" loc="(310,670)" name="Comparator">
-      <a name="width" val="5"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="1" loc="(1550,960)" name="AND Gate">
-      <a name="inputs" val="5"/>
-      <a name="negate0" val="true"/>
-    </comp>
-    <comp lib="8" loc="(1243,954)" name="Text">
-      <a name="text" val="2nd previos"/>
-    </comp>
-    <comp lib="8" loc="(1238,837)" name="Text">
-      <a name="text" val="previous"/>
-    </comp>
-    <comp lib="0" loc="(540,630)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MemRead_EX"/>
-    </comp>
-    <comp lib="3" loc="(1400,90)" name="Comparator">
-      <a name="width" val="5"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(550,370)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RegWrite_EX"/>
-    </comp>
-    <comp lib="8" loc="(319,641)" name="Text">
-      <a name="text" val="LW"/>
-    </comp>
-    <comp lib="0" loc="(780,200)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Reg_Des_EX"/>
-    </comp>
-    <comp lib="0" loc="(1340,50)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="Rs1_ID"/>
-    </comp>
-    <comp lib="3" loc="(1180,840)" name="Comparator">
-      <a name="width" val="5"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(520,440)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="0" loc="(230,380)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Rs1_ID"/>
-    </comp>
-    <comp lib="0" loc="(1400,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MemRead_EX"/>
-    </comp>
-    <comp lib="0" loc="(470,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="label" val="check_is_branch_or_not"/>
-    </comp>
-    <comp lib="0" loc="(1300,1170)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="0" loc="(2050,980)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="2"/>
-      <a name="label" val="Forward_D"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1340,160)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="Rs2_ID"/>
-    </comp>
-    <comp lib="1" loc="(1450,90)" name="NOT Gate"/>
-    <comp lib="0" loc="(440,650)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RegWrite_EX"/>
-    </comp>
-    <comp lib="0" loc="(1070,1110)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Rs2_ID"/>
-    </comp>
-    <comp lib="0" loc="(600,80)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="MemRead_EX"/>
-    </comp>
-    <comp lib="3" loc="(320,390)" name="Comparator">
-      <a name="width" val="5"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(560,490)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RegWrite_MEM"/>
-    </comp>
-    <comp lib="8" loc="(383,504)" name="Text">
-      <a name="text" val="2nd previos"/>
-    </comp>
-    <comp lib="1" loc="(940,420)" name="OR Gate"/>
-    <comp lib="1" loc="(1800,1090)" name="OR Gate"/>
-    <comp lib="0" loc="(1420,980)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Rs2_not_Zero"/>
-    </comp>
-    <comp lib="1" loc="(1550,850)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(170,520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Reg_Des_MEM"/>
-    </comp>
-    <comp lib="1" loc="(1550,1110)" name="AND Gate">
-      <a name="inputs" val="7"/>
-      <a name="negate0" val="true"/>
-      <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1030,850)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Reg_Des_EX"/>
-    </comp>
-    <comp lib="3" loc="(1400,200)" name="Comparator">
-      <a name="width" val="5"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(730,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="label" val="RegWrite_EX"/>
-    </comp>
-    <comp lib="0" loc="(1010,1130)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Reg_Des_EX"/>
-    </comp>
-    <comp lib="0" loc="(1310,1140)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Rs2_not_Zero"/>
     </comp>
     <comp lib="0" loc="(1320,110)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="5"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1460,90)" name="Tunnel">
-      <a name="label" val="Rs1_not_Zero"/>
+    <comp lib="0" loc="(600,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="label" val="MemRead_EX"/>
     </comp>
+    <comp lib="1" loc="(1550,960)" name="AND Gate">
+      <a name="inputs" val="5"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1340,160)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="Rs2_ID"/>
+    </comp>
+    <comp lib="0" loc="(1030,850)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Reg_Des_EX"/>
+    </comp>
+    <comp lib="0" loc="(850,80)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="RegWrite_MEM"/>
+    </comp>
+    <comp lib="1" loc="(940,420)" name="OR Gate"/>
     <comp lib="0" loc="(1320,220)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="5"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(650,160)" name="Tunnel">
+    <comp lib="3" loc="(330,510)" name="Comparator">
+      <a name="width" val="5"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="1" loc="(1550,850)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="3" loc="(310,670)" name="Comparator">
+      <a name="width" val="5"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1010,1130)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
       <a name="label" val="Reg_Des_MEM"/>
-    </comp>
-    <comp lib="0" loc="(1380,890)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="1" loc="(1450,200)" name="NOT Gate"/>
-    <comp lib="0" loc="(1400,1010)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="0" loc="(850,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="label" val="RegWrite_MEM"/>
-    </comp>
-    <comp lib="1" loc="(1800,870)" name="OR Gate"/>
-    <comp lib="8" loc="(378,387)" name="Text">
-      <a name="text" val="previous"/>
     </comp>
     <comp lib="0" loc="(1190,530)" name="Pin">
       <a name="facing" val="west"/>
@@ -556,74 +390,139 @@ end TCL_Generic;&#13;
       <a name="label" val="Forward_C"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1300,1100)" name="Tunnel">
+    <comp lib="0" loc="(1420,940)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="RegWrite_EX"/>
+      <a name="label" val="RegWrite_MEM"/>
     </comp>
-    <comp lib="3" loc="(1170,1120)" name="Comparator">
+    <comp lib="0" loc="(780,200)" name="Pin">
+      <a name="facing" val="west"/>
       <a name="width" val="5"/>
-      <a name="mode" val="unsigned"/>
+      <a name="label" val="Reg_Des_EX"/>
+    </comp>
+    <comp lib="0" loc="(1420,980)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Rs2_not_Zero"/>
+    </comp>
+    <comp lib="8" loc="(1243,954)" name="Text">
+      <a name="text" val="2nd previos"/>
+    </comp>
+    <comp lib="0" loc="(780,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Reg_Des_MEM"/>
+    </comp>
+    <comp lib="1" loc="(690,400)" name="AND Gate">
+      <a name="inputs" val="4"/>
     </comp>
     <comp lib="0" loc="(1090,830)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
       <a name="label" val="Rs2_ID"/>
     </comp>
-    <comp lib="0" loc="(150,680)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Reg_Des_EX"/>
-    </comp>
-    <comp lib="1" loc="(690,400)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(1300,190)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Rs2_ID"/>
-    </comp>
-    <comp lib="0" loc="(660,200)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Reg_Des_EX"/>
-    </comp>
-    <comp lib="0" loc="(230,500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="Rs1_ID"/>
-    </comp>
-    <comp lib="0" loc="(2020,980)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(540,560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Branch"/>
+    <comp lib="0" loc="(1460,200)" name="Tunnel">
+      <a name="label" val="Rs2_not_Zero"/>
     </comp>
     <comp lib="0" loc="(170,400)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
       <a name="label" val="Reg_Des_EX"/>
     </comp>
-    <comp lib="1" loc="(690,660)" name="AND Gate">
-      <a name="inputs" val="7"/>
-      <a name="negate0" val="true"/>
-      <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="1" loc="(940,640)" name="OR Gate"/>
-    <comp lib="0" loc="(450,690)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Rs1_not_Zero"/>
-    </comp>
-    <comp lib="0" loc="(600,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="label" val="MemRead_EX"/>
-    </comp>
     <comp lib="3" loc="(1190,960)" name="Comparator">
       <a name="width" val="5"/>
       <a name="mode" val="unsigned"/>
     </comp>
+    <comp lib="0" loc="(2050,980)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="2"/>
+      <a name="label" val="Forward_D"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(730,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="label" val="RegWrite_EX"/>
+    </comp>
     <comp lib="0" loc="(1160,530)" name="Splitter">
       <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(730,80)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="RegWrite_EX"/>
+    </comp>
+    <comp lib="8" loc="(1179,1091)" name="Text">
+      <a name="text" val="LW"/>
+    </comp>
+    <comp lib="3" loc="(1180,840)" name="Comparator">
+      <a name="width" val="5"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(230,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Rs1_ID"/>
+    </comp>
+    <comp lib="3" loc="(1400,90)" name="Comparator">
+      <a name="width" val="5"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1300,1100)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RegWrite_MEM"/>
+    </comp>
+    <comp lib="0" loc="(540,560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Branch"/>
+    </comp>
+    <comp lib="1" loc="(1550,1110)" name="AND Gate">
+      <a name="inputs" val="7"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="0" loc="(470,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="label" val="check_is_branch_or_not"/>
+    </comp>
+    <comp lib="0" loc="(1030,970)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Reg_Des_MEM"/>
+    </comp>
+    <comp lib="0" loc="(1340,50)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="Rs1_ID"/>
+    </comp>
+    <comp lib="8" loc="(383,504)" name="Text">
+      <a name="text" val="2nd previos"/>
+    </comp>
+    <comp lib="1" loc="(1800,1090)" name="OR Gate"/>
+    <comp lib="8" loc="(319,641)" name="Text">
+      <a name="text" val="LW"/>
+    </comp>
+    <comp lib="0" loc="(1310,1140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Rs2_not_Zero"/>
+    </comp>
+    <comp lib="0" loc="(1460,90)" name="Tunnel">
+      <a name="label" val="Rs1_not_Zero"/>
+    </comp>
+    <comp lib="3" loc="(1170,1120)" name="Comparator">
+      <a name="width" val="5"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(550,370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RegWrite_EX"/>
+    </comp>
+    <comp lib="8" loc="(378,387)" name="Text">
+      <a name="text" val="previous"/>
+    </comp>
+    <comp lib="0" loc="(550,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Rs1_not_Zero"/>
+    </comp>
+    <comp lib="0" loc="(470,90)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Branch"/>
     </comp>
     <comp lib="0" loc="(210,660)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -635,15 +534,119 @@ end TCL_Generic;&#13;
       <a name="width" val="5"/>
       <a name="label" val="Rs2_ID"/>
     </comp>
+    <comp lib="0" loc="(1410,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RegWrite_EX"/>
+    </comp>
+    <comp lib="1" loc="(690,510)" name="AND Gate">
+      <a name="inputs" val="5"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="8" loc="(1238,837)" name="Text">
+      <a name="text" val="previous"/>
+    </comp>
+    <comp lib="0" loc="(1400,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MemRead_MEM"/>
+    </comp>
+    <comp lib="0" loc="(650,160)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Reg_Des_MEM"/>
+    </comp>
+    <comp lib="0" loc="(450,690)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Rs1_not_Zero"/>
+    </comp>
+    <comp lib="3" loc="(320,390)" name="Comparator">
+      <a name="width" val="5"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="1" loc="(1450,200)" name="NOT Gate"/>
+    <comp lib="0" loc="(1070,1110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Rs2_ID"/>
+    </comp>
+    <comp lib="0" loc="(560,490)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RegWrite_MEM"/>
+    </comp>
+    <comp lib="0" loc="(170,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Reg_Des_MEM"/>
+    </comp>
+    <comp lib="0" loc="(560,530)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Rs1_not_Zero"/>
+    </comp>
+    <comp lib="1" loc="(940,640)" name="OR Gate"/>
+    <comp lib="0" loc="(540,630)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MemRead_MEM"/>
+    </comp>
+    <comp lib="0" loc="(850,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="label" val="RegWrite_MEM"/>
+    </comp>
+    <comp lib="0" loc="(1400,1010)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Branch"/>
+    </comp>
+    <comp lib="0" loc="(1380,890)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Branch"/>
+    </comp>
+    <comp lib="0" loc="(440,650)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RegWrite_MEM"/>
+    </comp>
+    <comp lib="0" loc="(440,720)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Branch"/>
+    </comp>
     <comp lib="0" loc="(1410,860)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Rs2_not_Zero"/>
     </comp>
-    <comp lib="0" loc="(1460,200)" name="Tunnel">
-      <a name="label" val="Rs2_not_Zero"/>
+    <comp lib="0" loc="(1300,1170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Branch"/>
     </comp>
-    <comp lib="8" loc="(1179,1091)" name="Text">
-      <a name="text" val="LW"/>
+    <comp lib="0" loc="(520,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Branch"/>
+    </comp>
+    <comp lib="3" loc="(1400,200)" name="Comparator">
+      <a name="width" val="5"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="1" loc="(690,660)" name="AND Gate">
+      <a name="inputs" val="7"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(1800,870)" name="OR Gate"/>
+    <comp lib="0" loc="(600,80)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="MemRead_MEM"/>
+    </comp>
+    <comp lib="0" loc="(660,200)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Reg_Des_EX"/>
+    </comp>
+    <comp lib="0" loc="(230,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Rs1_ID"/>
+    </comp>
+    <comp lib="1" loc="(1450,90)" name="NOT Gate"/>
+    <comp lib="0" loc="(1300,190)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="5"/>
+      <a name="label" val="Rs2_ID"/>
     </comp>
     <comp lib="0" loc="(1310,80)" name="Tunnel">
       <a name="facing" val="east"/>
