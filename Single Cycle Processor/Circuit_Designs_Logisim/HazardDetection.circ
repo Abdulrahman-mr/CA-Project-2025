@@ -156,7 +156,7 @@ end TCL_Generic;&#13;
     <a name="circuitvhdlpath" val=""/>
     <appear>
       <path d="M562,242 Q551,259 546,238" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="#ffb5fe" height="422" rx="10" ry="10" stroke="#000000" width="444" x="226" y="230"/>
+      <rect fill="#89e2ff" height="422" rx="10" ry="10" stroke="#000000" width="444" x="226" y="230"/>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="259" y="283">MemRead_EX</text>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="244" y="334">RS1_ID</text>
       <text font-family="SansSerif" font-size="9" font-weight="bold" text-anchor="middle" x="246" y="386">RS2_ID</text>
@@ -246,13 +246,6 @@ end TCL_Generic;&#13;
     <wire from="(550,590)" to="(620,590)"/>
     <wire from="(380,430)" to="(510,430)"/>
     <wire from="(270,350)" to="(530,350)"/>
-    <comp lib="3" loc="(370,570)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="0" loc="(590,510)" name="Pin">
-      <a name="label" val="reg_Write_WB"/>
-    </comp>
-    <comp lib="1" loc="(760,550)" name="AND Gate"/>
     <comp lib="0" loc="(970,800)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -262,68 +255,75 @@ end TCL_Generic;&#13;
     <comp lib="3" loc="(570,270)" name="Comparator">
       <a name="width" val="5"/>
     </comp>
-    <comp lib="3" loc="(570,340)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="1" loc="(730,400)" name="AND Gate"/>
-    <comp lib="3" loc="(380,430)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="1" loc="(990,470)" name="AND Gate"/>
-    <comp lib="3" loc="(380,500)" name="Comparator">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="0" loc="(190,490)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="RS2_ID"/>
-    </comp>
-    <comp lib="0" loc="(430,380)" name="Pin">
-      <a name="label" val="MemRead_EX"/>
-    </comp>
-    <comp lib="1" loc="(610,800)" name="OR Gate"/>
-    <comp lib="0" loc="(350,780)" name="Pin">
-      <a name="label" val="Branch"/>
-    </comp>
-    <comp lib="1" loc="(900,470)" name="OR Gate"/>
-    <comp lib="8" loc="(668,482)" name="Text">
-      <a name="text" val="READ IN 1 CYCLE AND WRITE IN ANOTHER"/>
-    </comp>
-    <comp lib="0" loc="(490,260)" name="Constant">
-      <a name="width" val="5"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="1" loc="(550,590)" name="OR Gate"/>
-    <comp lib="0" loc="(200,420)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="RS1_ID"/>
-    </comp>
-    <comp lib="1" loc="(620,340)" name="NOT Gate"/>
     <comp lib="0" loc="(1020,470)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Stall"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(350,820)" name="Pin">
-      <a name="label" val="jalr"/>
-    </comp>
+    <comp lib="1" loc="(610,800)" name="OR Gate"/>
     <comp lib="0" loc="(190,580)" name="Pin">
       <a name="width" val="5"/>
       <a name="label" val="RD_WB"/>
     </comp>
+    <comp lib="1" loc="(740,330)" name="AND Gate"/>
+    <comp lib="0" loc="(200,440)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="RD_EX"/>
+    </comp>
+    <comp lib="3" loc="(380,430)" name="Comparator">
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(590,510)" name="Pin">
+      <a name="label" val="reg_Write_WB"/>
+    </comp>
     <comp lib="3" loc="(370,640)" name="Comparator">
       <a name="width" val="5"/>
+    </comp>
+    <comp lib="1" loc="(620,340)" name="NOT Gate"/>
+    <comp lib="1" loc="(760,550)" name="AND Gate"/>
+    <comp lib="1" loc="(900,470)" name="OR Gate"/>
+    <comp lib="3" loc="(370,570)" name="Comparator">
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(430,380)" name="Pin">
+      <a name="label" val="MemRead_EX"/>
+    </comp>
+    <comp lib="1" loc="(550,590)" name="OR Gate"/>
+    <comp lib="3" loc="(570,340)" name="Comparator">
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(490,260)" name="Constant">
+      <a name="width" val="5"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="1" loc="(730,400)" name="AND Gate"/>
+    <comp lib="0" loc="(200,420)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="RS1_ID"/>
     </comp>
     <comp lib="0" loc="(480,320)" name="Constant">
       <a name="width" val="5"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(200,440)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="label" val="RD_EX"/>
+    <comp lib="0" loc="(350,820)" name="Pin">
+      <a name="label" val="jalr"/>
     </comp>
-    <comp lib="1" loc="(740,330)" name="AND Gate"/>
+    <comp lib="8" loc="(668,482)" name="Text">
+      <a name="text" val="READ IN 1 CYCLE AND WRITE IN ANOTHER"/>
+    </comp>
+    <comp lib="1" loc="(990,470)" name="AND Gate"/>
     <comp lib="1" loc="(560,450)" name="OR Gate"/>
+    <comp lib="0" loc="(350,780)" name="Pin">
+      <a name="label" val="Branch"/>
+    </comp>
     <comp lib="1" loc="(650,270)" name="NOT Gate"/>
+    <comp lib="0" loc="(190,490)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="label" val="RS2_ID"/>
+    </comp>
+    <comp lib="3" loc="(380,500)" name="Comparator">
+      <a name="width" val="5"/>
+    </comp>
   </circuit>
 </project>
